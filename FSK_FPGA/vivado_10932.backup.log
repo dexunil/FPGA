@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Mon Feb 05 08:37:03 2018
+# Process ID: 10932
+# Current directory: D:/FPGA/Vivado/FSK
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12828 D:\FPGA\Vivado\FSK\FSK.xpr
+# Log file: D:/FPGA/Vivado/FSK/vivado.log
+# Journal file: D:/FPGA/Vivado/FSK\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/FPGA/Vivado/FSK/FSK.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/program_file/Xilinx/Vivado/2015.4/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 730.836 ; gain = 123.113

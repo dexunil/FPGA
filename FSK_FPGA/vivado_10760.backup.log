@@ -1,0 +1,2265 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Thu Feb 01 08:54:23 2018
+# Process ID: 10760
+# Current directory: D:/FPGA/Vivado/FSK
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12768 D:\FPGA\Vivado\FSK\FSK.xpr
+# Log file: D:/FPGA/Vivado/FSK/vivado.log
+# Journal file: D:/FPGA/Vivado/FSK\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/FPGA/Vivado/FSK/FSK.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/program_file/Xilinx/Vivado/2015.4/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 747.492 ; gain = 133.699
+create_ip -name dds_compiler -vendor xilinx.com -library ip -version 6.0 -module_name dds_compiler_0
+set_property -dict [list CONFIG.DDS_Clock_Rate {50} CONFIG.Channels {2} CONFIG.Spurious_Free_Dynamic_Range {87} CONFIG.Frequency_Resolution {1520} CONFIG.Phase_Increment {Fixed} CONFIG.Phase_offset {Fixed} CONFIG.Output_Selection {Sine} CONFIG.Has_Phase_Out {false} CONFIG.Output_Frequency1 {4.25} CONFIG.Output_Frequency2 {7.75} CONFIG.Noise_Shaping {Auto} CONFIG.Phase_Width {15} CONFIG.Output_Width {15} CONFIG.DATA_Has_TLAST {Not_Required} CONFIG.S_PHASE_Has_TUSER {Not_Required} CONFIG.M_DATA_Has_TUSER {Not_Required} CONFIG.M_PHASE_Has_TUSER {Not_Required} CONFIG.Latency {9} CONFIG.PINC1 {1010111000010} CONFIG.PINC2 {10011110101110}] [get_ips dds_compiler_0]
+generate_target {instantiation_template} [get_files d:/FPGA/Vivado/FSK/FSK.srcs/sources_1/ip/dds_compiler_0/dds_compiler_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'dds_compiler_0'...
+update_compile_order -fileset sources_1
+set_property generate_synth_checkpoint false [get_files  d:/FPGA/Vivado/FSK/FSK.srcs/sources_1/ip/dds_compiler_0/dds_compiler_0.xci]
+generate_target all [get_files  d:/FPGA/Vivado/FSK/FSK.srcs/sources_1/ip/dds_compiler_0/dds_compiler_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'dds_compiler_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'dds_compiler_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'dds_compiler_0'...
+INFO: [IP_Flow 19-1686] Generating 'C Simulation' target for IP 'dds_compiler_0'...
+INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'dds_compiler_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'dds_compiler_0'...
+export_ip_user_files -of_objects [get_files d:/FPGA/Vivado/FSK/FSK.srcs/sources_1/ip/dds_compiler_0/dds_compiler_0.xci] -no_script -force -quiet
+export_simulation -of_objects [get_files d:/FPGA/Vivado/FSK/FSK.srcs/sources_1/ip/dds_compiler_0/dds_compiler_0.xci] -directory D:/FPGA/Vivado/FSK/FSK.ip_user_files/sim_scripts -force -quiet
+set_property -dict [list CONFIG.Phase_Increment {Programmable} CONFIG.DATA_Has_TLAST {Not_Required} CONFIG.S_PHASE_Has_TUSER {Not_Required} CONFIG.Output_Frequency1 {4.25}] [get_ips dds_compiler_0]
+generate_target all [get_files  d:/FPGA/Vivado/FSK/FSK.srcs/sources_1/ip/dds_compiler_0/dds_compiler_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'dds_compiler_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'dds_compiler_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'dds_compiler_0'...
+INFO: [IP_Flow 19-1686] Generating 'C Simulation' target for IP 'dds_compiler_0'...
+INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'dds_compiler_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'dds_compiler_0'...
+export_ip_user_files -of_objects [get_files d:/FPGA/Vivado/FSK/FSK.srcs/sources_1/ip/dds_compiler_0/dds_compiler_0.xci] -no_script -force -quiet
+export_simulation -of_objects [get_files d:/FPGA/Vivado/FSK/FSK.srcs/sources_1/ip/dds_compiler_0/dds_compiler_0.xci] -directory D:/FPGA/Vivado/FSK/FSK.ip_user_files/sim_scripts -force -quiet
+set_property -dict [list CONFIG.Output_Frequency1 {4} CONFIG.Output_Frequency2 {7} CONFIG.PINC1 {1010001111010} CONFIG.PINC2 {10001111010111}] [get_ips dds_compiler_0]
+generate_target all [get_files  d:/FPGA/Vivado/FSK/FSK.srcs/sources_1/ip/dds_compiler_0/dds_compiler_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'dds_compiler_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'dds_compiler_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'dds_compiler_0'...
+INFO: [IP_Flow 19-1686] Generating 'C Simulation' target for IP 'dds_compiler_0'...
+INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'dds_compiler_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'dds_compiler_0'...
+export_ip_user_files -of_objects [get_files d:/FPGA/Vivado/FSK/FSK.srcs/sources_1/ip/dds_compiler_0/dds_compiler_0.xci] -no_script -force -quiet
+export_simulation -of_objects [get_files d:/FPGA/Vivado/FSK/FSK.srcs/sources_1/ip/dds_compiler_0/dds_compiler_0.xci] -directory D:/FPGA/Vivado/FSK/FSK.ip_user_files/sim_scripts -force -quiet
+set_property -dict [list CONFIG.Phase_Increment {Fixed} CONFIG.Negative_Sine {false} CONFIG.Has_Phase_Out {false} CONFIG.DATA_Has_TLAST {Not_Required} CONFIG.S_PHASE_Has_TUSER {Not_Required} CONFIG.M_DATA_Has_TUSER {Not_Required} CONFIG.Output_Frequency1 {4}] [get_ips dds_compiler_0]
+generate_target all [get_files  d:/FPGA/Vivado/FSK/FSK.srcs/sources_1/ip/dds_compiler_0/dds_compiler_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'dds_compiler_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'dds_compiler_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'dds_compiler_0'...
+INFO: [IP_Flow 19-1686] Generating 'C Simulation' target for IP 'dds_compiler_0'...
+INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'dds_compiler_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'dds_compiler_0'...
+export_ip_user_files -of_objects [get_files d:/FPGA/Vivado/FSK/FSK.srcs/sources_1/ip/dds_compiler_0/dds_compiler_0.xci] -no_script -force -quiet
+export_simulation -of_objects [get_files d:/FPGA/Vivado/FSK/FSK.srcs/sources_1/ip/dds_compiler_0/dds_compiler_0.xci] -directory D:/FPGA/Vivado/FSK/FSK.ip_user_files/sim_scripts -force -quiet
+update_compile_order -fileset sources_1
+file mkdir D:/FPGA/Vivado/FSK/FSK.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open D:/FPGA/Vivado/FSK/FSK.srcs/sim_1/new/simu.v w ]
+add_files -fileset sim_1 D:/FPGA/Vivado/FSK/FSK.srcs/sim_1/new/simu.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'simu' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'D:/FPGA/Vivado/FSK/FSK.sim/sim_1/behav'
+"xvlog -m64 --relax -prj simu_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/new/FSK_mod.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSK_mod
+INFO: [VRFC 10-2458] undeclared symbol m_axis_data_tvalid, assumed default net type wire [D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/new/FSK_mod.v:39]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivado/FSK/FSK.srcs/sim_1/new/simu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simu
+ERROR: [VRFC 10-1247] port connections cannot be mixed ordered and named [D:/FPGA/Vivado/FSK/FSK.srcs/sim_1/new/simu.v:30]
+ERROR: [VRFC 10-61] dout4 is not a function [D:/FPGA/Vivado/FSK/FSK.srcs/sim_1/new/simu.v:34]
+ERROR: [VRFC 10-29] dout4 expects 0 arguments [D:/FPGA/Vivado/FSK/FSK.srcs/sim_1/new/simu.v:34]
+ERROR: [VRFC 10-61] dout7 is not a function [D:/FPGA/Vivado/FSK/FSK.srcs/sim_1/new/simu.v:35]
+ERROR: [VRFC 10-29] dout7 expects 0 arguments [D:/FPGA/Vivado/FSK/FSK.srcs/sim_1/new/simu.v:35]
+ERROR: [VRFC 10-1040] module simu ignored due to previous errors [D:/FPGA/Vivado/FSK/FSK.srcs/sim_1/new/simu.v:23]
+"xvhdl -m64 --relax -prj simu_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd" into library xbip_utils_v3_0_5
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/axi_utils_v2_0_1/hdl/axi_utils_v2_0_vh_rfs.vhd" into library axi_utils_v2_0_1
+INFO: [VRFC 10-307] analyzing entity glb_srl_fifo
+INFO: [VRFC 10-307] analyzing entity glb_ifx_slave
+INFO: [VRFC 10-307] analyzing entity glb_ifx_master
+INFO: [VRFC 10-307] analyzing entity axi_slave_2to1
+INFO: [VRFC 10-307] analyzing entity axi_slave_3to1
+INFO: [VRFC 10-307] analyzing entity axi_slave_4to1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_pipe_v3_0_1/hdl/xbip_pipe_v3_0_vh_rfs.vhd" into library xbip_pipe_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0_1_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_pipe_v3_0_1/hdl/xbip_pipe_v3_0.vhd" into library xbip_pipe_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0_1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_bram18k_v3_0_1/hdl/xbip_bram18k_v3_0_vh_rfs.vhd" into library xbip_bram18k_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_synth
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_v3_0_1_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_bram18k_v3_0_1/hdl/xbip_bram18k_v3_0.vhd" into library xbip_bram18k_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_v3_0_1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd" into library mult_gen_v12_0_10
+INFO: [VRFC 10-307] analyzing entity op_resize
+INFO: [VRFC 10-307] analyzing entity delay_line
+INFO: [VRFC 10-307] analyzing entity cc_compare
+INFO: [VRFC 10-307] analyzing entity luts
+INFO: [VRFC 10-307] analyzing entity mult18
+INFO: [VRFC 10-307] analyzing entity dsp
+INFO: [VRFC 10-307] analyzing entity hybrid
+INFO: [VRFC 10-307] analyzing entity ccm_dist_mem
+INFO: [VRFC 10-307] analyzing entity ccm_sp_block_mem
+INFO: [VRFC 10-307] analyzing entity ccm_dp_block_mem
+INFO: [VRFC 10-307] analyzing entity ccm_syncmem
+INFO: [VRFC 10-307] analyzing entity ccm_scaled_adder
+INFO: [VRFC 10-307] analyzing entity ccm_operation
+INFO: [VRFC 10-307] analyzing entity ccm
+INFO: [VRFC 10-307] analyzing entity three_input_adder
+INFO: [VRFC 10-307] analyzing entity multmxn_lut6
+INFO: [VRFC 10-307] analyzing entity mult_gen_v12_0_10_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/mult_gen_v12_0_10/hdl/mult_gen_v12_0.vhd" into library mult_gen_v12_0_10
+INFO: [VRFC 10-307] analyzing entity mult_gen_v12_0_10
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_dsp48_wrapper_v3_0_4/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd" into library xbip_dsp48_wrapper_v3_0_4
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e2_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_wrapper_v3_0_4
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_dsp48_addsub_v3_0_1/hdl/xbip_dsp48_addsub_v3_0_vh_rfs.vhd" into library xbip_dsp48_addsub_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_synth
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_v3_0_1_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_dsp48_addsub_v3_0_1/hdl/xbip_dsp48_addsub_v3_0.vhd" into library xbip_dsp48_addsub_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_v3_0_1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_dsp48_multadd_v3_0_1/hdl/xbip_dsp48_multadd_v3_0_vh_rfs.vhd" into library xbip_dsp48_multadd_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_synth
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_v3_0_1_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_dsp48_multadd_v3_0_1/hdl/xbip_dsp48_multadd_v3_0.vhd" into library xbip_dsp48_multadd_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_v3_0_1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/dds_compiler_v6_0_11/hdl/dds_compiler_v6_0_vh_rfs.vhd" into library dds_compiler_v6_0_11
+INFO: [VRFC 10-307] analyzing entity dither_wrap
+INFO: [VRFC 10-307] analyzing entity pipe_add
+INFO: [VRFC 10-307] analyzing entity lut_ram
+INFO: [VRFC 10-307] analyzing entity lut5_ram
+INFO: [VRFC 10-307] analyzing entity sin_cos
+INFO: [VRFC 10-307] analyzing entity sin_cos_quad_rast
+INFO: [VRFC 10-307] analyzing entity dsp48_wrap
+INFO: [VRFC 10-307] analyzing entity accum
+INFO: [VRFC 10-307] analyzing entity raster_accum
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11_eff_lut
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11_eff
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11_rdy
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11_core
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/dds_compiler_v6_0_11/hdl/dds_compiler_v6_0.vhd" into library dds_compiler_v6_0_11
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/ip/dds_compiler_0/sim/dds_compiler_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dds_compiler_0
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 833.211 ; gain = 0.000
+INFO: [USF-XSim-99] Step results log file:'D:/FPGA/Vivado/FSK/FSK.sim/sim_1/behav/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'D:/FPGA/Vivado/FSK/FSK.sim/sim_1/behav/xvlog.log' file for more information.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 833.211 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'simu' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'D:/FPGA/Vivado/FSK/FSK.sim/sim_1/behav'
+"xvlog -m64 --relax -prj simu_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/new/FSK_mod.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSK_mod
+INFO: [VRFC 10-2458] undeclared symbol m_axis_data_tvalid, assumed default net type wire [D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/new/FSK_mod.v:39]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivado/FSK/FSK.srcs/sim_1/new/simu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivado/FSK/FSK.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj simu_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd" into library xbip_utils_v3_0_5
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/axi_utils_v2_0_1/hdl/axi_utils_v2_0_vh_rfs.vhd" into library axi_utils_v2_0_1
+INFO: [VRFC 10-307] analyzing entity glb_srl_fifo
+INFO: [VRFC 10-307] analyzing entity glb_ifx_slave
+INFO: [VRFC 10-307] analyzing entity glb_ifx_master
+INFO: [VRFC 10-307] analyzing entity axi_slave_2to1
+INFO: [VRFC 10-307] analyzing entity axi_slave_3to1
+INFO: [VRFC 10-307] analyzing entity axi_slave_4to1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_pipe_v3_0_1/hdl/xbip_pipe_v3_0_vh_rfs.vhd" into library xbip_pipe_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0_1_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_pipe_v3_0_1/hdl/xbip_pipe_v3_0.vhd" into library xbip_pipe_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0_1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_bram18k_v3_0_1/hdl/xbip_bram18k_v3_0_vh_rfs.vhd" into library xbip_bram18k_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_synth
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_v3_0_1_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_bram18k_v3_0_1/hdl/xbip_bram18k_v3_0.vhd" into library xbip_bram18k_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_v3_0_1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd" into library mult_gen_v12_0_10
+INFO: [VRFC 10-307] analyzing entity op_resize
+INFO: [VRFC 10-307] analyzing entity delay_line
+INFO: [VRFC 10-307] analyzing entity cc_compare
+INFO: [VRFC 10-307] analyzing entity luts
+INFO: [VRFC 10-307] analyzing entity mult18
+INFO: [VRFC 10-307] analyzing entity dsp
+INFO: [VRFC 10-307] analyzing entity hybrid
+INFO: [VRFC 10-307] analyzing entity ccm_dist_mem
+INFO: [VRFC 10-307] analyzing entity ccm_sp_block_mem
+INFO: [VRFC 10-307] analyzing entity ccm_dp_block_mem
+INFO: [VRFC 10-307] analyzing entity ccm_syncmem
+INFO: [VRFC 10-307] analyzing entity ccm_scaled_adder
+INFO: [VRFC 10-307] analyzing entity ccm_operation
+INFO: [VRFC 10-307] analyzing entity ccm
+INFO: [VRFC 10-307] analyzing entity three_input_adder
+INFO: [VRFC 10-307] analyzing entity multmxn_lut6
+INFO: [VRFC 10-307] analyzing entity mult_gen_v12_0_10_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/mult_gen_v12_0_10/hdl/mult_gen_v12_0.vhd" into library mult_gen_v12_0_10
+INFO: [VRFC 10-307] analyzing entity mult_gen_v12_0_10
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_dsp48_wrapper_v3_0_4/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd" into library xbip_dsp48_wrapper_v3_0_4
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e2_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_wrapper_v3_0_4
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_dsp48_addsub_v3_0_1/hdl/xbip_dsp48_addsub_v3_0_vh_rfs.vhd" into library xbip_dsp48_addsub_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_synth
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_v3_0_1_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_dsp48_addsub_v3_0_1/hdl/xbip_dsp48_addsub_v3_0.vhd" into library xbip_dsp48_addsub_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_v3_0_1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_dsp48_multadd_v3_0_1/hdl/xbip_dsp48_multadd_v3_0_vh_rfs.vhd" into library xbip_dsp48_multadd_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_synth
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_v3_0_1_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_dsp48_multadd_v3_0_1/hdl/xbip_dsp48_multadd_v3_0.vhd" into library xbip_dsp48_multadd_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_v3_0_1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/dds_compiler_v6_0_11/hdl/dds_compiler_v6_0_vh_rfs.vhd" into library dds_compiler_v6_0_11
+INFO: [VRFC 10-307] analyzing entity dither_wrap
+INFO: [VRFC 10-307] analyzing entity pipe_add
+INFO: [VRFC 10-307] analyzing entity lut_ram
+INFO: [VRFC 10-307] analyzing entity lut5_ram
+INFO: [VRFC 10-307] analyzing entity sin_cos
+INFO: [VRFC 10-307] analyzing entity sin_cos_quad_rast
+INFO: [VRFC 10-307] analyzing entity dsp48_wrap
+INFO: [VRFC 10-307] analyzing entity accum
+INFO: [VRFC 10-307] analyzing entity raster_accum
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11_eff_lut
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11_eff
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11_rdy
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11_core
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/dds_compiler_v6_0_11/hdl/dds_compiler_v6_0.vhd" into library dds_compiler_v6_0_11
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/ip/dds_compiler_0/sim/dds_compiler_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dds_compiler_0
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/FPGA/Vivado/FSK/FSK.sim/sim_1/behav'
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: D:/program_file/Xilinx/Vivado/2015.4/bin/unwrapped/win64.o/xelab.exe -wto 3256dda551e44dd6bbd9fced7dfd9f7f --debug typical --relax --mt 2 -L xbip_utils_v3_0_5 -L axi_utils_v2_0_1 -L xbip_pipe_v3_0_1 -L xbip_bram18k_v3_0_1 -L mult_gen_v12_0_10 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_1 -L xbip_dsp48_multadd_v3_0_1 -L dds_compiler_v6_0_11 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simu_behav xil_defaultlib.simu xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package xbip_utils_v3_0_5.xbip_utils_v3_0_5_pkg
+Compiling package xbip_utils_v3_0_5.xcc_utils_v3_0
+Compiling package dds_compiler_v6_0_11.dds_compiler_v6_0_11_viv_comp
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package dds_compiler_v6_0_11.pkg_dds_compiler_v6_0_11
+Compiling package dds_compiler_v6_0_11.dds_compiler_v6_0_11_hdl_comps
+Compiling package xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv_comp
+Compiling package axi_utils_v2_0_1.axi_utils_v2_0_1_pkg
+Compiling package ieee.math_real
+Compiling package axi_utils_v2_0_1.global_util_pkg
+Compiling package axi_utils_v2_0_1.axi_utils_comps
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package dds_compiler_v6_0_11.pkg_betas
+Compiling package dds_compiler_v6_0_11.pkg_alphas
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(9,1,0,0,1,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(0,1,0,0,1,...]
+Compiling architecture synth of entity dds_compiler_v6_0_11.lut_ram [\lut_ram(("UUUUUUUUUUUUUUUUUUUUU...]
+Compiling architecture synth of entity dds_compiler_v6_0_11.lut_ram [\lut_ram(("UUUUUUUUUUUUUUUUUUUUU...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(1,1,0,0,0,...]
+Compiling architecture synth of entity dds_compiler_v6_0_11.dds_compiler_v6_0_11_rdy [\dds_compiler_v6_0_11_rdy(1,0,2,...]
+Compiling architecture fdse_v of entity unisim.FDSE [\FDSE('1','0','0','0')\]
+Compiling architecture synth of entity dds_compiler_v6_0_11.dither_wrap [\dither_wrap(2,3,1,0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(1,1,0,0,1,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(1,1,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(0,1,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(0,1,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(1,1,0,0,0,...]
+Compiling architecture synth of entity dds_compiler_v6_0_11.pipe_add [\pipe_add(15,1,15)\]
+Compiling architecture synth of entity dds_compiler_v6_0_11.accum [\accum("zynq",2,3,"1010001111010...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(0,1,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(1,1,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(1,1,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(4,1,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(1,1,0,0,0,...]
+Compiling architecture synth of entity dds_compiler_v6_0_11.sin_cos [\sin_cos("zynq",0,9,1,13,15,13,6...]
+Compiling architecture synth of entity dds_compiler_v6_0_11.dds_compiler_v6_0_11_core [\dds_compiler_v6_0_11_core("zynq...]
+Compiling architecture synth of entity dds_compiler_v6_0_11.dds_compiler_v6_0_11_viv [\dds_compiler_v6_0_11_viv("zynq"...]
+Compiling architecture xilinx of entity dds_compiler_v6_0_11.dds_compiler_v6_0_11 [\dds_compiler_v6_0_11("zynq",0,9...]
+Compiling architecture dds_compiler_0_arch of entity xil_defaultlib.dds_compiler_0 [dds_compiler_0_default]
+Compiling module xil_defaultlib.FSK_mod
+Compiling module xil_defaultlib.simu
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simu_behav
+
+****** Webtalk v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source D:/FPGA/Vivado/FSK/FSK.sim/sim_1/behav/xsim.dir/simu_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu Feb 01 14:06:43 2018...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 835.430 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/FPGA/Vivado/FSK/FSK.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simu_behav -key {Behavioral:sim_1:Functional:simu} -tclbatch {simu.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.4
+Time resolution is 1 ps
+source simu.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simu_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:17 . Memory (MB): peak = 835.801 ; gain = 0.371
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run all
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 971.629 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+update_compile_order -fileset sources_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'simu' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'D:/FPGA/Vivado/FSK/FSK.sim/sim_1/behav'
+"xvlog -m64 --relax -prj simu_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/new/FSK_mod.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSK_mod
+INFO: [VRFC 10-2458] undeclared symbol m_axis_data_tvalid, assumed default net type wire [D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/new/FSK_mod.v:40]
+ERROR: [VRFC 10-1412] syntax error near <= [D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/new/FSK_mod.v:52]
+ERROR: [VRFC 10-529] concurrent assignment to a non-net dout4 is not permitted [D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/new/FSK_mod.v:55]
+ERROR: [VRFC 10-529] concurrent assignment to a non-net dout7 is not permitted [D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/new/FSK_mod.v:56]
+ERROR: [VRFC 10-529] concurrent assignment to a non-net dout15 is not permitted [D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/new/FSK_mod.v:57]
+ERROR: [VRFC 10-1040] module FSK_mod ignored due to previous errors [D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/new/FSK_mod.v:23]
+INFO: [USF-XSim-99] Step results log file:'D:/FPGA/Vivado/FSK/FSK.sim/sim_1/behav/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'D:/FPGA/Vivado/FSK/FSK.sim/sim_1/behav/xvlog.log' file for more information.
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'simu' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'D:/FPGA/Vivado/FSK/FSK.sim/sim_1/behav'
+"xvlog -m64 --relax -prj simu_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/new/FSK_mod.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSK_mod
+INFO: [VRFC 10-2458] undeclared symbol m_axis_data_tvalid, assumed default net type wire [D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/new/FSK_mod.v:40]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivado/FSK/FSK.srcs/sim_1/new/simu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivado/FSK/FSK.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj simu_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd" into library xbip_utils_v3_0_5
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/axi_utils_v2_0_1/hdl/axi_utils_v2_0_vh_rfs.vhd" into library axi_utils_v2_0_1
+INFO: [VRFC 10-307] analyzing entity glb_srl_fifo
+INFO: [VRFC 10-307] analyzing entity glb_ifx_slave
+INFO: [VRFC 10-307] analyzing entity glb_ifx_master
+INFO: [VRFC 10-307] analyzing entity axi_slave_2to1
+INFO: [VRFC 10-307] analyzing entity axi_slave_3to1
+INFO: [VRFC 10-307] analyzing entity axi_slave_4to1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_pipe_v3_0_1/hdl/xbip_pipe_v3_0_vh_rfs.vhd" into library xbip_pipe_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0_1_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_pipe_v3_0_1/hdl/xbip_pipe_v3_0.vhd" into library xbip_pipe_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0_1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_bram18k_v3_0_1/hdl/xbip_bram18k_v3_0_vh_rfs.vhd" into library xbip_bram18k_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_synth
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_v3_0_1_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_bram18k_v3_0_1/hdl/xbip_bram18k_v3_0.vhd" into library xbip_bram18k_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_v3_0_1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd" into library mult_gen_v12_0_10
+INFO: [VRFC 10-307] analyzing entity op_resize
+INFO: [VRFC 10-307] analyzing entity delay_line
+INFO: [VRFC 10-307] analyzing entity cc_compare
+INFO: [VRFC 10-307] analyzing entity luts
+INFO: [VRFC 10-307] analyzing entity mult18
+INFO: [VRFC 10-307] analyzing entity dsp
+INFO: [VRFC 10-307] analyzing entity hybrid
+INFO: [VRFC 10-307] analyzing entity ccm_dist_mem
+INFO: [VRFC 10-307] analyzing entity ccm_sp_block_mem
+INFO: [VRFC 10-307] analyzing entity ccm_dp_block_mem
+INFO: [VRFC 10-307] analyzing entity ccm_syncmem
+INFO: [VRFC 10-307] analyzing entity ccm_scaled_adder
+INFO: [VRFC 10-307] analyzing entity ccm_operation
+INFO: [VRFC 10-307] analyzing entity ccm
+INFO: [VRFC 10-307] analyzing entity three_input_adder
+INFO: [VRFC 10-307] analyzing entity multmxn_lut6
+INFO: [VRFC 10-307] analyzing entity mult_gen_v12_0_10_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/mult_gen_v12_0_10/hdl/mult_gen_v12_0.vhd" into library mult_gen_v12_0_10
+INFO: [VRFC 10-307] analyzing entity mult_gen_v12_0_10
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_dsp48_wrapper_v3_0_4/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd" into library xbip_dsp48_wrapper_v3_0_4
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e2_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_wrapper_v3_0_4
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_dsp48_addsub_v3_0_1/hdl/xbip_dsp48_addsub_v3_0_vh_rfs.vhd" into library xbip_dsp48_addsub_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_synth
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_v3_0_1_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_dsp48_addsub_v3_0_1/hdl/xbip_dsp48_addsub_v3_0.vhd" into library xbip_dsp48_addsub_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_v3_0_1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_dsp48_multadd_v3_0_1/hdl/xbip_dsp48_multadd_v3_0_vh_rfs.vhd" into library xbip_dsp48_multadd_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_synth
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_v3_0_1_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_dsp48_multadd_v3_0_1/hdl/xbip_dsp48_multadd_v3_0.vhd" into library xbip_dsp48_multadd_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_v3_0_1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/dds_compiler_v6_0_11/hdl/dds_compiler_v6_0_vh_rfs.vhd" into library dds_compiler_v6_0_11
+INFO: [VRFC 10-307] analyzing entity dither_wrap
+INFO: [VRFC 10-307] analyzing entity pipe_add
+INFO: [VRFC 10-307] analyzing entity lut_ram
+INFO: [VRFC 10-307] analyzing entity lut5_ram
+INFO: [VRFC 10-307] analyzing entity sin_cos
+INFO: [VRFC 10-307] analyzing entity sin_cos_quad_rast
+INFO: [VRFC 10-307] analyzing entity dsp48_wrap
+INFO: [VRFC 10-307] analyzing entity accum
+INFO: [VRFC 10-307] analyzing entity raster_accum
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11_eff_lut
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11_eff
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11_rdy
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11_core
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/dds_compiler_v6_0_11/hdl/dds_compiler_v6_0.vhd" into library dds_compiler_v6_0_11
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/ip/dds_compiler_0/sim/dds_compiler_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dds_compiler_0
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/FPGA/Vivado/FSK/FSK.sim/sim_1/behav'
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: D:/program_file/Xilinx/Vivado/2015.4/bin/unwrapped/win64.o/xelab.exe -wto 3256dda551e44dd6bbd9fced7dfd9f7f --debug typical --relax --mt 2 -L xbip_utils_v3_0_5 -L axi_utils_v2_0_1 -L xbip_pipe_v3_0_1 -L xbip_bram18k_v3_0_1 -L mult_gen_v12_0_10 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_1 -L xbip_dsp48_multadd_v3_0_1 -L dds_compiler_v6_0_11 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simu_behav xil_defaultlib.simu xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package xbip_utils_v3_0_5.xbip_utils_v3_0_5_pkg
+Compiling package xbip_utils_v3_0_5.xcc_utils_v3_0
+Compiling package dds_compiler_v6_0_11.dds_compiler_v6_0_11_viv_comp
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package dds_compiler_v6_0_11.pkg_dds_compiler_v6_0_11
+Compiling package dds_compiler_v6_0_11.dds_compiler_v6_0_11_hdl_comps
+Compiling package xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv_comp
+Compiling package axi_utils_v2_0_1.axi_utils_v2_0_1_pkg
+Compiling package ieee.math_real
+Compiling package axi_utils_v2_0_1.global_util_pkg
+Compiling package axi_utils_v2_0_1.axi_utils_comps
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package dds_compiler_v6_0_11.pkg_betas
+Compiling package dds_compiler_v6_0_11.pkg_alphas
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(9,1,0,0,1,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(0,1,0,0,1,...]
+Compiling architecture synth of entity dds_compiler_v6_0_11.lut_ram [\lut_ram(("UUUUUUUUUUUUUUUUUUUUU...]
+Compiling architecture synth of entity dds_compiler_v6_0_11.lut_ram [\lut_ram(("UUUUUUUUUUUUUUUUUUUUU...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(1,1,0,0,0,...]
+Compiling architecture synth of entity dds_compiler_v6_0_11.dds_compiler_v6_0_11_rdy [\dds_compiler_v6_0_11_rdy(1,0,2,...]
+Compiling architecture fdse_v of entity unisim.FDSE [\FDSE('1','0','0','0')\]
+Compiling architecture synth of entity dds_compiler_v6_0_11.dither_wrap [\dither_wrap(2,3,1,0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(1,1,0,0,1,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(1,1,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(0,1,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(0,1,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(1,1,0,0,0,...]
+Compiling architecture synth of entity dds_compiler_v6_0_11.pipe_add [\pipe_add(15,1,15)\]
+Compiling architecture synth of entity dds_compiler_v6_0_11.accum [\accum("zynq",2,3,"1010001111010...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(0,1,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(1,1,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(1,1,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(4,1,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(1,1,0,0,0,...]
+Compiling architecture synth of entity dds_compiler_v6_0_11.sin_cos [\sin_cos("zynq",0,9,1,13,15,13,6...]
+Compiling architecture synth of entity dds_compiler_v6_0_11.dds_compiler_v6_0_11_core [\dds_compiler_v6_0_11_core("zynq...]
+Compiling architecture synth of entity dds_compiler_v6_0_11.dds_compiler_v6_0_11_viv [\dds_compiler_v6_0_11_viv("zynq"...]
+Compiling architecture xilinx of entity dds_compiler_v6_0_11.dds_compiler_v6_0_11 [\dds_compiler_v6_0_11("zynq",0,9...]
+Compiling architecture dds_compiler_0_arch of entity xil_defaultlib.dds_compiler_0 [dds_compiler_0_default]
+Compiling module xil_defaultlib.FSK_mod
+Compiling module xil_defaultlib.simu
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simu_behav
+
+****** Webtalk v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source D:/FPGA/Vivado/FSK/FSK.sim/sim_1/behav/xsim.dir/simu_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu Feb 01 14:19:29 2018...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 991.602 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/FPGA/Vivado/FSK/FSK.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simu_behav -key {Behavioral:sim_1:Functional:simu} -tclbatch {simu.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.4
+Time resolution is 1 ps
+source simu.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simu_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 991.602 ; gain = 0.000
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property -dict [list CONFIG.Channels {1} CONFIG.Output_Frequency1 {4.25} CONFIG.Frequency_Resolution {1520} CONFIG.Noise_Shaping {Auto} CONFIG.Phase_Width {16} CONFIG.Output_Width {15} CONFIG.DATA_Has_TLAST {Not_Required} CONFIG.S_PHASE_Has_TUSER {Not_Required} CONFIG.M_DATA_Has_TUSER {Not_Required} CONFIG.M_PHASE_Has_TUSER {Not_Required} CONFIG.PINC1 {1010111000010} CONFIG.Output_Frequency2 {0} CONFIG.PINC2 {0}] [get_ips dds_compiler_0]
+generate_target all [get_files  d:/FPGA/Vivado/FSK/FSK.srcs/sources_1/ip/dds_compiler_0/dds_compiler_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'dds_compiler_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'dds_compiler_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'dds_compiler_0'...
+INFO: [IP_Flow 19-1686] Generating 'C Simulation' target for IP 'dds_compiler_0'...
+INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'dds_compiler_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'dds_compiler_0'...
+export_ip_user_files -of_objects [get_files d:/FPGA/Vivado/FSK/FSK.srcs/sources_1/ip/dds_compiler_0/dds_compiler_0.xci] -no_script -force -quiet
+export_simulation -of_objects [get_files d:/FPGA/Vivado/FSK/FSK.srcs/sources_1/ip/dds_compiler_0/dds_compiler_0.xci] -directory D:/FPGA/Vivado/FSK/FSK.ip_user_files/sim_scripts -force -quiet
+create_ip -name dds_compiler -vendor xilinx.com -library ip -version 6.0 -module_name dds_compiler_1
+set_property -dict [list CONFIG.DDS_Clock_Rate {50} CONFIG.Spurious_Free_Dynamic_Range {87} CONFIG.Frequency_Resolution {1520} CONFIG.Phase_offset {Fixed} CONFIG.Output_Selection {Sine} CONFIG.Has_Phase_Out {false} CONFIG.Output_Frequency1 {7.75} CONFIG.Frequency_Resolution {1520} CONFIG.Noise_Shaping {Auto} CONFIG.Phase_Width {16} CONFIG.Output_Width {15} CONFIG.DATA_Has_TLAST {Not_Required} CONFIG.S_PHASE_Has_TUSER {Not_Required} CONFIG.M_DATA_Has_TUSER {Not_Required} CONFIG.Latency {9} CONFIG.PINC1 {10011110101110}] [get_ips dds_compiler_1]
+generate_target {instantiation_template} [get_files d:/FPGA/Vivado/FSK/FSK.srcs/sources_1/ip/dds_compiler_1/dds_compiler_1.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'dds_compiler_1'...
+update_compile_order -fileset sources_1
+set_property generate_synth_checkpoint false [get_files  d:/FPGA/Vivado/FSK/FSK.srcs/sources_1/ip/dds_compiler_1/dds_compiler_1.xci]
+generate_target all [get_files  d:/FPGA/Vivado/FSK/FSK.srcs/sources_1/ip/dds_compiler_1/dds_compiler_1.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'dds_compiler_1'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'dds_compiler_1'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'dds_compiler_1'...
+INFO: [IP_Flow 19-1686] Generating 'C Simulation' target for IP 'dds_compiler_1'...
+INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'dds_compiler_1'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'dds_compiler_1'...
+export_ip_user_files -of_objects [get_files d:/FPGA/Vivado/FSK/FSK.srcs/sources_1/ip/dds_compiler_1/dds_compiler_1.xci] -no_script -force -quiet
+export_simulation -of_objects [get_files d:/FPGA/Vivado/FSK/FSK.srcs/sources_1/ip/dds_compiler_1/dds_compiler_1.xci] -directory D:/FPGA/Vivado/FSK/FSK.ip_user_files/sim_scripts -force -quiet
+update_compile_order -fileset sources_1
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:D:/FPGA/Vivado/FSK/FSK.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'simu' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'D:/FPGA/Vivado/FSK/FSK.sim/sim_1/behav'
+"xvlog -m64 --relax -prj simu_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/new/FSK_mod.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSK_mod
+INFO: [VRFC 10-2458] undeclared symbol m_axis_data_tvalid, assumed default net type wire [D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/new/FSK_mod.v:40]
+INFO: [VRFC 10-2458] undeclared symbol aclk, assumed default net type wire [D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/new/FSK_mod.v:44]
+INFO: [VRFC 10-2458] undeclared symbol dout_all, assumed default net type wire [D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/new/FSK_mod.v:59]
+ERROR: [VRFC 10-91] din is not declared [D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/new/FSK_mod.v:26]
+ERROR: [VRFC 10-2109] no definition for port dout_all [D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/new/FSK_mod.v:29]
+ERROR: [VRFC 10-91] din is not declared [D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/new/FSK_mod.v:51]
+ERROR: [VRFC 10-1040] module FSK_mod ignored due to previous errors [D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/new/FSK_mod.v:23]
+"xvhdl -m64 --relax -prj simu_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd" into library xbip_utils_v3_0_5
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/axi_utils_v2_0_1/hdl/axi_utils_v2_0_vh_rfs.vhd" into library axi_utils_v2_0_1
+INFO: [VRFC 10-307] analyzing entity glb_srl_fifo
+INFO: [VRFC 10-307] analyzing entity glb_ifx_slave
+INFO: [VRFC 10-307] analyzing entity glb_ifx_master
+INFO: [VRFC 10-307] analyzing entity axi_slave_2to1
+INFO: [VRFC 10-307] analyzing entity axi_slave_3to1
+INFO: [VRFC 10-307] analyzing entity axi_slave_4to1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_pipe_v3_0_1/hdl/xbip_pipe_v3_0_vh_rfs.vhd" into library xbip_pipe_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0_1_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_pipe_v3_0_1/hdl/xbip_pipe_v3_0.vhd" into library xbip_pipe_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0_1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_bram18k_v3_0_1/hdl/xbip_bram18k_v3_0_vh_rfs.vhd" into library xbip_bram18k_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_synth
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_v3_0_1_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_bram18k_v3_0_1/hdl/xbip_bram18k_v3_0.vhd" into library xbip_bram18k_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_v3_0_1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd" into library mult_gen_v12_0_10
+INFO: [VRFC 10-307] analyzing entity op_resize
+INFO: [VRFC 10-307] analyzing entity delay_line
+INFO: [VRFC 10-307] analyzing entity cc_compare
+INFO: [VRFC 10-307] analyzing entity luts
+INFO: [VRFC 10-307] analyzing entity mult18
+INFO: [VRFC 10-307] analyzing entity dsp
+INFO: [VRFC 10-307] analyzing entity hybrid
+INFO: [VRFC 10-307] analyzing entity ccm_dist_mem
+INFO: [VRFC 10-307] analyzing entity ccm_sp_block_mem
+INFO: [VRFC 10-307] analyzing entity ccm_dp_block_mem
+INFO: [VRFC 10-307] analyzing entity ccm_syncmem
+INFO: [VRFC 10-307] analyzing entity ccm_scaled_adder
+INFO: [VRFC 10-307] analyzing entity ccm_operation
+INFO: [VRFC 10-307] analyzing entity ccm
+INFO: [VRFC 10-307] analyzing entity three_input_adder
+INFO: [VRFC 10-307] analyzing entity multmxn_lut6
+INFO: [VRFC 10-307] analyzing entity mult_gen_v12_0_10_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/mult_gen_v12_0_10/hdl/mult_gen_v12_0.vhd" into library mult_gen_v12_0_10
+INFO: [VRFC 10-307] analyzing entity mult_gen_v12_0_10
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_dsp48_wrapper_v3_0_4/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd" into library xbip_dsp48_wrapper_v3_0_4
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e2_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_wrapper_v3_0_4
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_dsp48_addsub_v3_0_1/hdl/xbip_dsp48_addsub_v3_0_vh_rfs.vhd" into library xbip_dsp48_addsub_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_synth
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_v3_0_1_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_dsp48_addsub_v3_0_1/hdl/xbip_dsp48_addsub_v3_0.vhd" into library xbip_dsp48_addsub_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_v3_0_1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_dsp48_multadd_v3_0_1/hdl/xbip_dsp48_multadd_v3_0_vh_rfs.vhd" into library xbip_dsp48_multadd_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_synth
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_v3_0_1_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_dsp48_multadd_v3_0_1/hdl/xbip_dsp48_multadd_v3_0.vhd" into library xbip_dsp48_multadd_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_v3_0_1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/dds_compiler_v6_0_11/hdl/dds_compiler_v6_0_vh_rfs.vhd" into library dds_compiler_v6_0_11
+INFO: [VRFC 10-307] analyzing entity dither_wrap
+INFO: [VRFC 10-307] analyzing entity pipe_add
+INFO: [VRFC 10-307] analyzing entity lut_ram
+INFO: [VRFC 10-307] analyzing entity lut5_ram
+INFO: [VRFC 10-307] analyzing entity sin_cos
+INFO: [VRFC 10-307] analyzing entity sin_cos_quad_rast
+INFO: [VRFC 10-307] analyzing entity dsp48_wrap
+INFO: [VRFC 10-307] analyzing entity accum
+INFO: [VRFC 10-307] analyzing entity raster_accum
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11_eff_lut
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11_eff
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11_rdy
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11_core
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/dds_compiler_v6_0_11/hdl/dds_compiler_v6_0.vhd" into library dds_compiler_v6_0_11
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/ip/dds_compiler_1/sim/dds_compiler_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dds_compiler_1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/ip/dds_compiler_0/sim/dds_compiler_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dds_compiler_0
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1003.641 ; gain = 0.000
+INFO: [USF-XSim-99] Step results log file:'D:/FPGA/Vivado/FSK/FSK.sim/sim_1/behav/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'D:/FPGA/Vivado/FSK/FSK.sim/sim_1/behav/xvlog.log' file for more information.
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 1003.641 ; gain = 0.000
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:D:/FPGA/Vivado/FSK/FSK.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'simu' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'D:/FPGA/Vivado/FSK/FSK.sim/sim_1/behav'
+"xvlog -m64 --relax -prj simu_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/new/FSK_mod.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSK_mod
+INFO: [VRFC 10-2458] undeclared symbol m_axis_data_tvalid, assumed default net type wire [D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/new/FSK_mod.v:40]
+INFO: [VRFC 10-2458] undeclared symbol dout_all, assumed default net type wire [D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/new/FSK_mod.v:59]
+ERROR: [VRFC 10-91] din is not declared [D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/new/FSK_mod.v:26]
+ERROR: [VRFC 10-2109] no definition for port dout_all [D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/new/FSK_mod.v:29]
+ERROR: [VRFC 10-91] din is not declared [D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/new/FSK_mod.v:51]
+ERROR: [VRFC 10-1040] module FSK_mod ignored due to previous errors [D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/new/FSK_mod.v:23]
+"xvhdl -m64 --relax -prj simu_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd" into library xbip_utils_v3_0_5
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/axi_utils_v2_0_1/hdl/axi_utils_v2_0_vh_rfs.vhd" into library axi_utils_v2_0_1
+INFO: [VRFC 10-307] analyzing entity glb_srl_fifo
+INFO: [VRFC 10-307] analyzing entity glb_ifx_slave
+INFO: [VRFC 10-307] analyzing entity glb_ifx_master
+INFO: [VRFC 10-307] analyzing entity axi_slave_2to1
+INFO: [VRFC 10-307] analyzing entity axi_slave_3to1
+INFO: [VRFC 10-307] analyzing entity axi_slave_4to1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_pipe_v3_0_1/hdl/xbip_pipe_v3_0_vh_rfs.vhd" into library xbip_pipe_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0_1_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_pipe_v3_0_1/hdl/xbip_pipe_v3_0.vhd" into library xbip_pipe_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0_1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_bram18k_v3_0_1/hdl/xbip_bram18k_v3_0_vh_rfs.vhd" into library xbip_bram18k_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_synth
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_v3_0_1_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_bram18k_v3_0_1/hdl/xbip_bram18k_v3_0.vhd" into library xbip_bram18k_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_v3_0_1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd" into library mult_gen_v12_0_10
+INFO: [VRFC 10-307] analyzing entity op_resize
+INFO: [VRFC 10-307] analyzing entity delay_line
+INFO: [VRFC 10-307] analyzing entity cc_compare
+INFO: [VRFC 10-307] analyzing entity luts
+INFO: [VRFC 10-307] analyzing entity mult18
+INFO: [VRFC 10-307] analyzing entity dsp
+INFO: [VRFC 10-307] analyzing entity hybrid
+INFO: [VRFC 10-307] analyzing entity ccm_dist_mem
+INFO: [VRFC 10-307] analyzing entity ccm_sp_block_mem
+INFO: [VRFC 10-307] analyzing entity ccm_dp_block_mem
+INFO: [VRFC 10-307] analyzing entity ccm_syncmem
+INFO: [VRFC 10-307] analyzing entity ccm_scaled_adder
+INFO: [VRFC 10-307] analyzing entity ccm_operation
+INFO: [VRFC 10-307] analyzing entity ccm
+INFO: [VRFC 10-307] analyzing entity three_input_adder
+INFO: [VRFC 10-307] analyzing entity multmxn_lut6
+INFO: [VRFC 10-307] analyzing entity mult_gen_v12_0_10_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/mult_gen_v12_0_10/hdl/mult_gen_v12_0.vhd" into library mult_gen_v12_0_10
+INFO: [VRFC 10-307] analyzing entity mult_gen_v12_0_10
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_dsp48_wrapper_v3_0_4/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd" into library xbip_dsp48_wrapper_v3_0_4
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e2_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_wrapper_v3_0_4
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_dsp48_addsub_v3_0_1/hdl/xbip_dsp48_addsub_v3_0_vh_rfs.vhd" into library xbip_dsp48_addsub_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_synth
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_v3_0_1_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_dsp48_addsub_v3_0_1/hdl/xbip_dsp48_addsub_v3_0.vhd" into library xbip_dsp48_addsub_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_v3_0_1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_dsp48_multadd_v3_0_1/hdl/xbip_dsp48_multadd_v3_0_vh_rfs.vhd" into library xbip_dsp48_multadd_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_synth
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_v3_0_1_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_dsp48_multadd_v3_0_1/hdl/xbip_dsp48_multadd_v3_0.vhd" into library xbip_dsp48_multadd_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_v3_0_1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/dds_compiler_v6_0_11/hdl/dds_compiler_v6_0_vh_rfs.vhd" into library dds_compiler_v6_0_11
+INFO: [VRFC 10-307] analyzing entity dither_wrap
+INFO: [VRFC 10-307] analyzing entity pipe_add
+INFO: [VRFC 10-307] analyzing entity lut_ram
+INFO: [VRFC 10-307] analyzing entity lut5_ram
+INFO: [VRFC 10-307] analyzing entity sin_cos
+INFO: [VRFC 10-307] analyzing entity sin_cos_quad_rast
+INFO: [VRFC 10-307] analyzing entity dsp48_wrap
+INFO: [VRFC 10-307] analyzing entity accum
+INFO: [VRFC 10-307] analyzing entity raster_accum
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11_eff_lut
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11_eff
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11_rdy
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11_core
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/dds_compiler_v6_0_11/hdl/dds_compiler_v6_0.vhd" into library dds_compiler_v6_0_11
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/ip/dds_compiler_1/sim/dds_compiler_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dds_compiler_1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/ip/dds_compiler_0/sim/dds_compiler_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dds_compiler_0
+INFO: [USF-XSim-99] Step results log file:'D:/FPGA/Vivado/FSK/FSK.sim/sim_1/behav/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'D:/FPGA/Vivado/FSK/FSK.sim/sim_1/behav/xvlog.log' file for more information.
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1003.641 ; gain = 0.000
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:D:/FPGA/Vivado/FSK/FSK.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'simu' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'D:/FPGA/Vivado/FSK/FSK.sim/sim_1/behav'
+"xvlog -m64 --relax -prj simu_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/new/FSK_mod.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSK_mod
+INFO: [VRFC 10-2458] undeclared symbol m_axis_data_tvalid, assumed default net type wire [D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/new/FSK_mod.v:41]
+ERROR: [VRFC 10-91] din is not declared [D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/new/FSK_mod.v:26]
+ERROR: [VRFC 10-91] din is not declared [D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/new/FSK_mod.v:52]
+ERROR: [VRFC 10-1040] module FSK_mod ignored due to previous errors [D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/new/FSK_mod.v:23]
+"xvhdl -m64 --relax -prj simu_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd" into library xbip_utils_v3_0_5
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/axi_utils_v2_0_1/hdl/axi_utils_v2_0_vh_rfs.vhd" into library axi_utils_v2_0_1
+INFO: [VRFC 10-307] analyzing entity glb_srl_fifo
+INFO: [VRFC 10-307] analyzing entity glb_ifx_slave
+INFO: [VRFC 10-307] analyzing entity glb_ifx_master
+INFO: [VRFC 10-307] analyzing entity axi_slave_2to1
+INFO: [VRFC 10-307] analyzing entity axi_slave_3to1
+INFO: [VRFC 10-307] analyzing entity axi_slave_4to1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_pipe_v3_0_1/hdl/xbip_pipe_v3_0_vh_rfs.vhd" into library xbip_pipe_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0_1_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_pipe_v3_0_1/hdl/xbip_pipe_v3_0.vhd" into library xbip_pipe_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0_1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_bram18k_v3_0_1/hdl/xbip_bram18k_v3_0_vh_rfs.vhd" into library xbip_bram18k_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_synth
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_v3_0_1_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_bram18k_v3_0_1/hdl/xbip_bram18k_v3_0.vhd" into library xbip_bram18k_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_v3_0_1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd" into library mult_gen_v12_0_10
+INFO: [VRFC 10-307] analyzing entity op_resize
+INFO: [VRFC 10-307] analyzing entity delay_line
+INFO: [VRFC 10-307] analyzing entity cc_compare
+INFO: [VRFC 10-307] analyzing entity luts
+INFO: [VRFC 10-307] analyzing entity mult18
+INFO: [VRFC 10-307] analyzing entity dsp
+INFO: [VRFC 10-307] analyzing entity hybrid
+INFO: [VRFC 10-307] analyzing entity ccm_dist_mem
+INFO: [VRFC 10-307] analyzing entity ccm_sp_block_mem
+INFO: [VRFC 10-307] analyzing entity ccm_dp_block_mem
+INFO: [VRFC 10-307] analyzing entity ccm_syncmem
+INFO: [VRFC 10-307] analyzing entity ccm_scaled_adder
+INFO: [VRFC 10-307] analyzing entity ccm_operation
+INFO: [VRFC 10-307] analyzing entity ccm
+INFO: [VRFC 10-307] analyzing entity three_input_adder
+INFO: [VRFC 10-307] analyzing entity multmxn_lut6
+INFO: [VRFC 10-307] analyzing entity mult_gen_v12_0_10_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/mult_gen_v12_0_10/hdl/mult_gen_v12_0.vhd" into library mult_gen_v12_0_10
+INFO: [VRFC 10-307] analyzing entity mult_gen_v12_0_10
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_dsp48_wrapper_v3_0_4/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd" into library xbip_dsp48_wrapper_v3_0_4
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e2_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_wrapper_v3_0_4
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_dsp48_addsub_v3_0_1/hdl/xbip_dsp48_addsub_v3_0_vh_rfs.vhd" into library xbip_dsp48_addsub_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_synth
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_v3_0_1_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_dsp48_addsub_v3_0_1/hdl/xbip_dsp48_addsub_v3_0.vhd" into library xbip_dsp48_addsub_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_v3_0_1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_dsp48_multadd_v3_0_1/hdl/xbip_dsp48_multadd_v3_0_vh_rfs.vhd" into library xbip_dsp48_multadd_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_synth
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_v3_0_1_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_dsp48_multadd_v3_0_1/hdl/xbip_dsp48_multadd_v3_0.vhd" into library xbip_dsp48_multadd_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_v3_0_1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/dds_compiler_v6_0_11/hdl/dds_compiler_v6_0_vh_rfs.vhd" into library dds_compiler_v6_0_11
+INFO: [VRFC 10-307] analyzing entity dither_wrap
+INFO: [VRFC 10-307] analyzing entity pipe_add
+INFO: [VRFC 10-307] analyzing entity lut_ram
+INFO: [VRFC 10-307] analyzing entity lut5_ram
+INFO: [VRFC 10-307] analyzing entity sin_cos
+INFO: [VRFC 10-307] analyzing entity sin_cos_quad_rast
+INFO: [VRFC 10-307] analyzing entity dsp48_wrap
+INFO: [VRFC 10-307] analyzing entity accum
+INFO: [VRFC 10-307] analyzing entity raster_accum
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11_eff_lut
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11_eff
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11_rdy
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11_core
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/dds_compiler_v6_0_11/hdl/dds_compiler_v6_0.vhd" into library dds_compiler_v6_0_11
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/ip/dds_compiler_1/sim/dds_compiler_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dds_compiler_1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/ip/dds_compiler_0/sim/dds_compiler_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dds_compiler_0
+INFO: [USF-XSim-99] Step results log file:'D:/FPGA/Vivado/FSK/FSK.sim/sim_1/behav/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'D:/FPGA/Vivado/FSK/FSK.sim/sim_1/behav/xvlog.log' file for more information.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1003.641 ; gain = 0.000
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:D:/FPGA/Vivado/FSK/FSK.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'simu' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'D:/FPGA/Vivado/FSK/FSK.sim/sim_1/behav'
+"xvlog -m64 --relax -prj simu_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/new/FSK_mod.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSK_mod
+INFO: [VRFC 10-2458] undeclared symbol m_axis_data_tvalid, assumed default net type wire [D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/new/FSK_mod.v:41]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivado/FSK/FSK.srcs/sim_1/new/simu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simu
+INFO: [VRFC 10-2458] undeclared symbol dout7dout7_75M, assumed default net type wire [D:/FPGA/Vivado/FSK/FSK.srcs/sim_1/new/simu.v:38]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivado/FSK/FSK.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj simu_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd" into library xbip_utils_v3_0_5
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/axi_utils_v2_0_1/hdl/axi_utils_v2_0_vh_rfs.vhd" into library axi_utils_v2_0_1
+INFO: [VRFC 10-307] analyzing entity glb_srl_fifo
+INFO: [VRFC 10-307] analyzing entity glb_ifx_slave
+INFO: [VRFC 10-307] analyzing entity glb_ifx_master
+INFO: [VRFC 10-307] analyzing entity axi_slave_2to1
+INFO: [VRFC 10-307] analyzing entity axi_slave_3to1
+INFO: [VRFC 10-307] analyzing entity axi_slave_4to1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_pipe_v3_0_1/hdl/xbip_pipe_v3_0_vh_rfs.vhd" into library xbip_pipe_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0_1_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_pipe_v3_0_1/hdl/xbip_pipe_v3_0.vhd" into library xbip_pipe_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0_1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_bram18k_v3_0_1/hdl/xbip_bram18k_v3_0_vh_rfs.vhd" into library xbip_bram18k_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_synth
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_v3_0_1_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_bram18k_v3_0_1/hdl/xbip_bram18k_v3_0.vhd" into library xbip_bram18k_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_v3_0_1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd" into library mult_gen_v12_0_10
+INFO: [VRFC 10-307] analyzing entity op_resize
+INFO: [VRFC 10-307] analyzing entity delay_line
+INFO: [VRFC 10-307] analyzing entity cc_compare
+INFO: [VRFC 10-307] analyzing entity luts
+INFO: [VRFC 10-307] analyzing entity mult18
+INFO: [VRFC 10-307] analyzing entity dsp
+INFO: [VRFC 10-307] analyzing entity hybrid
+INFO: [VRFC 10-307] analyzing entity ccm_dist_mem
+INFO: [VRFC 10-307] analyzing entity ccm_sp_block_mem
+INFO: [VRFC 10-307] analyzing entity ccm_dp_block_mem
+INFO: [VRFC 10-307] analyzing entity ccm_syncmem
+INFO: [VRFC 10-307] analyzing entity ccm_scaled_adder
+INFO: [VRFC 10-307] analyzing entity ccm_operation
+INFO: [VRFC 10-307] analyzing entity ccm
+INFO: [VRFC 10-307] analyzing entity three_input_adder
+INFO: [VRFC 10-307] analyzing entity multmxn_lut6
+INFO: [VRFC 10-307] analyzing entity mult_gen_v12_0_10_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/mult_gen_v12_0_10/hdl/mult_gen_v12_0.vhd" into library mult_gen_v12_0_10
+INFO: [VRFC 10-307] analyzing entity mult_gen_v12_0_10
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_dsp48_wrapper_v3_0_4/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd" into library xbip_dsp48_wrapper_v3_0_4
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e2_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_wrapper_v3_0_4
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_dsp48_addsub_v3_0_1/hdl/xbip_dsp48_addsub_v3_0_vh_rfs.vhd" into library xbip_dsp48_addsub_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_synth
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_v3_0_1_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_dsp48_addsub_v3_0_1/hdl/xbip_dsp48_addsub_v3_0.vhd" into library xbip_dsp48_addsub_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_v3_0_1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_dsp48_multadd_v3_0_1/hdl/xbip_dsp48_multadd_v3_0_vh_rfs.vhd" into library xbip_dsp48_multadd_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_synth
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_v3_0_1_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_dsp48_multadd_v3_0_1/hdl/xbip_dsp48_multadd_v3_0.vhd" into library xbip_dsp48_multadd_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_v3_0_1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/dds_compiler_v6_0_11/hdl/dds_compiler_v6_0_vh_rfs.vhd" into library dds_compiler_v6_0_11
+INFO: [VRFC 10-307] analyzing entity dither_wrap
+INFO: [VRFC 10-307] analyzing entity pipe_add
+INFO: [VRFC 10-307] analyzing entity lut_ram
+INFO: [VRFC 10-307] analyzing entity lut5_ram
+INFO: [VRFC 10-307] analyzing entity sin_cos
+INFO: [VRFC 10-307] analyzing entity sin_cos_quad_rast
+INFO: [VRFC 10-307] analyzing entity dsp48_wrap
+INFO: [VRFC 10-307] analyzing entity accum
+INFO: [VRFC 10-307] analyzing entity raster_accum
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11_eff_lut
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11_eff
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11_rdy
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11_core
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/dds_compiler_v6_0_11/hdl/dds_compiler_v6_0.vhd" into library dds_compiler_v6_0_11
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/ip/dds_compiler_1/sim/dds_compiler_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dds_compiler_1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/ip/dds_compiler_0/sim/dds_compiler_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dds_compiler_0
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/FPGA/Vivado/FSK/FSK.sim/sim_1/behav'
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: D:/program_file/Xilinx/Vivado/2015.4/bin/unwrapped/win64.o/xelab.exe -wto 3256dda551e44dd6bbd9fced7dfd9f7f --debug typical --relax --mt 2 -L xbip_utils_v3_0_5 -L axi_utils_v2_0_1 -L xbip_pipe_v3_0_1 -L xbip_bram18k_v3_0_1 -L mult_gen_v12_0_10 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_1 -L xbip_dsp48_multadd_v3_0_1 -L dds_compiler_v6_0_11 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simu_behav xil_defaultlib.simu xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 16 for port dout7_75M [D:/FPGA/Vivado/FSK/FSK.srcs/sim_1/new/simu.v:38]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package xbip_utils_v3_0_5.xbip_utils_v3_0_5_pkg
+Compiling package xbip_utils_v3_0_5.xcc_utils_v3_0
+Compiling package dds_compiler_v6_0_11.dds_compiler_v6_0_11_viv_comp
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package dds_compiler_v6_0_11.pkg_dds_compiler_v6_0_11
+Compiling package dds_compiler_v6_0_11.dds_compiler_v6_0_11_hdl_comps
+Compiling package xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv_comp
+Compiling package axi_utils_v2_0_1.axi_utils_v2_0_1_pkg
+Compiling package ieee.math_real
+Compiling package axi_utils_v2_0_1.global_util_pkg
+Compiling package axi_utils_v2_0_1.axi_utils_comps
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_unsigned
+Compiling package dds_compiler_v6_0_11.pkg_betas
+Compiling package dds_compiler_v6_0_11.pkg_alphas
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(9,1,0,0,1,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(1,1,0,0,0,...]
+Compiling architecture synth of entity dds_compiler_v6_0_11.dds_compiler_v6_0_11_rdy [\dds_compiler_v6_0_11_rdy(1,0,1,...]
+Compiling architecture synth of entity dds_compiler_v6_0_11.dither_wrap [\dither_wrap(3,4,1,0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(0,1,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(0,1,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(1,1,0,0,0,...]
+Compiling architecture synth of entity dds_compiler_v6_0_11.pipe_add [\pipe_add(16,1,16)\]
+Compiling architecture synth of entity dds_compiler_v6_0_11.accum [\accum("zynq",1,3,"1010111000010...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(0,1,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(1,1,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(1,1,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(4,1,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(1,1,0,0,0,...]
+Compiling architecture synth of entity dds_compiler_v6_0_11.sin_cos [\sin_cos("zynq",0,9,1,13,15,13,6...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(0,1,0,0,1,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(0,1,0,0,0,...]
+Compiling architecture synth of entity dds_compiler_v6_0_11.dds_compiler_v6_0_11_core [\dds_compiler_v6_0_11_core("zynq...]
+Compiling architecture synth of entity dds_compiler_v6_0_11.dds_compiler_v6_0_11_viv [\dds_compiler_v6_0_11_viv("zynq"...]
+Compiling architecture xilinx of entity dds_compiler_v6_0_11.dds_compiler_v6_0_11 [\dds_compiler_v6_0_11("zynq",0,9...]
+Compiling architecture dds_compiler_0_arch of entity xil_defaultlib.dds_compiler_0 [dds_compiler_0_default]
+Compiling architecture synth of entity dds_compiler_v6_0_11.accum [\accum("zynq",1,3,"1001111010111...]
+Compiling architecture synth of entity dds_compiler_v6_0_11.dds_compiler_v6_0_11_core [\dds_compiler_v6_0_11_core("zynq...]
+Compiling architecture synth of entity dds_compiler_v6_0_11.dds_compiler_v6_0_11_viv [\dds_compiler_v6_0_11_viv("zynq"...]
+Compiling architecture xilinx of entity dds_compiler_v6_0_11.dds_compiler_v6_0_11 [\dds_compiler_v6_0_11("zynq",0,9...]
+Compiling architecture dds_compiler_1_arch of entity xil_defaultlib.dds_compiler_1 [dds_compiler_1_default]
+Compiling module xil_defaultlib.FSK_mod
+Compiling module xil_defaultlib.simu
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simu_behav
+
+****** Webtalk v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source D:/FPGA/Vivado/FSK/FSK.sim/sim_1/behav/xsim.dir/simu_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu Feb 01 14:38:25 2018...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 1003.641 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/FPGA/Vivado/FSK/FSK.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simu_behav -key {Behavioral:sim_1:Functional:simu} -tclbatch {simu.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.4
+Time resolution is 1 ps
+source simu.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simu_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:15 . Memory (MB): peak = 1003.641 ; gain = 0.000
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run all
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-344] 'run' was cancelled
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property -dict [list CONFIG.Output_Frequency1 {2.5} CONFIG.PINC1 {110011001100}] [get_ips dds_compiler_0]
+generate_target all [get_files  d:/FPGA/Vivado/FSK/FSK.srcs/sources_1/ip/dds_compiler_0/dds_compiler_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'dds_compiler_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'dds_compiler_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'dds_compiler_0'...
+INFO: [IP_Flow 19-1686] Generating 'C Simulation' target for IP 'dds_compiler_0'...
+INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'dds_compiler_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'dds_compiler_0'...
+export_ip_user_files -of_objects [get_files d:/FPGA/Vivado/FSK/FSK.srcs/sources_1/ip/dds_compiler_0/dds_compiler_0.xci] -no_script -force -quiet
+export_simulation -of_objects [get_files d:/FPGA/Vivado/FSK/FSK.srcs/sources_1/ip/dds_compiler_0/dds_compiler_0.xci] -directory D:/FPGA/Vivado/FSK/FSK.ip_user_files/sim_scripts -force -quiet
+set_property -dict [list CONFIG.Output_Frequency1 {9.5} CONFIG.PINC1 {11000010100011}] [get_ips dds_compiler_1]
+generate_target all [get_files  d:/FPGA/Vivado/FSK/FSK.srcs/sources_1/ip/dds_compiler_1/dds_compiler_1.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'dds_compiler_1'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'dds_compiler_1'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'dds_compiler_1'...
+INFO: [IP_Flow 19-1686] Generating 'C Simulation' target for IP 'dds_compiler_1'...
+INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'dds_compiler_1'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'dds_compiler_1'...
+export_ip_user_files -of_objects [get_files d:/FPGA/Vivado/FSK/FSK.srcs/sources_1/ip/dds_compiler_1/dds_compiler_1.xci] -no_script -force -quiet
+export_simulation -of_objects [get_files d:/FPGA/Vivado/FSK/FSK.srcs/sources_1/ip/dds_compiler_1/dds_compiler_1.xci] -directory D:/FPGA/Vivado/FSK/FSK.ip_user_files/sim_scripts -force -quiet
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:D:/FPGA/Vivado/FSK/FSK.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'simu' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'D:/FPGA/Vivado/FSK/FSK.sim/sim_1/behav'
+"xvlog -m64 --relax -prj simu_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/new/FSK_mod.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSK_mod
+INFO: [VRFC 10-2458] undeclared symbol m_axis_data_tvalid, assumed default net type wire [D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/new/FSK_mod.v:42]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivado/FSK/FSK.srcs/sim_1/new/simu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simu
+INFO: [VRFC 10-2458] undeclared symbol dout7dout9_5M, assumed default net type wire [D:/FPGA/Vivado/FSK/FSK.srcs/sim_1/new/simu.v:38]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivado/FSK/FSK.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj simu_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd" into library xbip_utils_v3_0_5
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/axi_utils_v2_0_1/hdl/axi_utils_v2_0_vh_rfs.vhd" into library axi_utils_v2_0_1
+INFO: [VRFC 10-307] analyzing entity glb_srl_fifo
+INFO: [VRFC 10-307] analyzing entity glb_ifx_slave
+INFO: [VRFC 10-307] analyzing entity glb_ifx_master
+INFO: [VRFC 10-307] analyzing entity axi_slave_2to1
+INFO: [VRFC 10-307] analyzing entity axi_slave_3to1
+INFO: [VRFC 10-307] analyzing entity axi_slave_4to1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_pipe_v3_0_1/hdl/xbip_pipe_v3_0_vh_rfs.vhd" into library xbip_pipe_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0_1_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_pipe_v3_0_1/hdl/xbip_pipe_v3_0.vhd" into library xbip_pipe_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0_1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_bram18k_v3_0_1/hdl/xbip_bram18k_v3_0_vh_rfs.vhd" into library xbip_bram18k_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_synth
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_v3_0_1_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_bram18k_v3_0_1/hdl/xbip_bram18k_v3_0.vhd" into library xbip_bram18k_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_v3_0_1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd" into library mult_gen_v12_0_10
+INFO: [VRFC 10-307] analyzing entity op_resize
+INFO: [VRFC 10-307] analyzing entity delay_line
+INFO: [VRFC 10-307] analyzing entity cc_compare
+INFO: [VRFC 10-307] analyzing entity luts
+INFO: [VRFC 10-307] analyzing entity mult18
+INFO: [VRFC 10-307] analyzing entity dsp
+INFO: [VRFC 10-307] analyzing entity hybrid
+INFO: [VRFC 10-307] analyzing entity ccm_dist_mem
+INFO: [VRFC 10-307] analyzing entity ccm_sp_block_mem
+INFO: [VRFC 10-307] analyzing entity ccm_dp_block_mem
+INFO: [VRFC 10-307] analyzing entity ccm_syncmem
+INFO: [VRFC 10-307] analyzing entity ccm_scaled_adder
+INFO: [VRFC 10-307] analyzing entity ccm_operation
+INFO: [VRFC 10-307] analyzing entity ccm
+INFO: [VRFC 10-307] analyzing entity three_input_adder
+INFO: [VRFC 10-307] analyzing entity multmxn_lut6
+INFO: [VRFC 10-307] analyzing entity mult_gen_v12_0_10_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/mult_gen_v12_0_10/hdl/mult_gen_v12_0.vhd" into library mult_gen_v12_0_10
+INFO: [VRFC 10-307] analyzing entity mult_gen_v12_0_10
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_dsp48_wrapper_v3_0_4/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd" into library xbip_dsp48_wrapper_v3_0_4
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e2_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_wrapper_v3_0_4
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_dsp48_addsub_v3_0_1/hdl/xbip_dsp48_addsub_v3_0_vh_rfs.vhd" into library xbip_dsp48_addsub_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_synth
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_v3_0_1_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_dsp48_addsub_v3_0_1/hdl/xbip_dsp48_addsub_v3_0.vhd" into library xbip_dsp48_addsub_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_v3_0_1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_dsp48_multadd_v3_0_1/hdl/xbip_dsp48_multadd_v3_0_vh_rfs.vhd" into library xbip_dsp48_multadd_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_synth
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_v3_0_1_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_dsp48_multadd_v3_0_1/hdl/xbip_dsp48_multadd_v3_0.vhd" into library xbip_dsp48_multadd_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_v3_0_1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/dds_compiler_v6_0_11/hdl/dds_compiler_v6_0_vh_rfs.vhd" into library dds_compiler_v6_0_11
+INFO: [VRFC 10-307] analyzing entity dither_wrap
+INFO: [VRFC 10-307] analyzing entity pipe_add
+INFO: [VRFC 10-307] analyzing entity lut_ram
+INFO: [VRFC 10-307] analyzing entity lut5_ram
+INFO: [VRFC 10-307] analyzing entity sin_cos
+INFO: [VRFC 10-307] analyzing entity sin_cos_quad_rast
+INFO: [VRFC 10-307] analyzing entity dsp48_wrap
+INFO: [VRFC 10-307] analyzing entity accum
+INFO: [VRFC 10-307] analyzing entity raster_accum
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11_eff_lut
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11_eff
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11_rdy
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11_core
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/dds_compiler_v6_0_11/hdl/dds_compiler_v6_0.vhd" into library dds_compiler_v6_0_11
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/ip/dds_compiler_1/sim/dds_compiler_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dds_compiler_1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/ip/dds_compiler_0/sim/dds_compiler_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dds_compiler_0
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1003.641 ; gain = 0.000
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/FPGA/Vivado/FSK/FSK.sim/sim_1/behav'
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: D:/program_file/Xilinx/Vivado/2015.4/bin/unwrapped/win64.o/xelab.exe -wto 3256dda551e44dd6bbd9fced7dfd9f7f --debug typical --relax --mt 2 -L xbip_utils_v3_0_5 -L axi_utils_v2_0_1 -L xbip_pipe_v3_0_1 -L xbip_bram18k_v3_0_1 -L mult_gen_v12_0_10 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_1 -L xbip_dsp48_multadd_v3_0_1 -L dds_compiler_v6_0_11 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simu_behav xil_defaultlib.simu xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 16 for port dout9_5M [D:/FPGA/Vivado/FSK/FSK.srcs/sim_1/new/simu.v:38]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package xbip_utils_v3_0_5.xbip_utils_v3_0_5_pkg
+Compiling package xbip_utils_v3_0_5.xcc_utils_v3_0
+Compiling package dds_compiler_v6_0_11.dds_compiler_v6_0_11_viv_comp
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package dds_compiler_v6_0_11.pkg_dds_compiler_v6_0_11
+Compiling package dds_compiler_v6_0_11.dds_compiler_v6_0_11_hdl_comps
+Compiling package xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv_comp
+Compiling package axi_utils_v2_0_1.axi_utils_v2_0_1_pkg
+Compiling package ieee.math_real
+Compiling package axi_utils_v2_0_1.global_util_pkg
+Compiling package axi_utils_v2_0_1.axi_utils_comps
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_unsigned
+Compiling package dds_compiler_v6_0_11.pkg_betas
+Compiling package dds_compiler_v6_0_11.pkg_alphas
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(9,1,0,0,1,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(1,1,0,0,0,...]
+Compiling architecture synth of entity dds_compiler_v6_0_11.dds_compiler_v6_0_11_rdy [\dds_compiler_v6_0_11_rdy(1,0,1,...]
+Compiling architecture synth of entity dds_compiler_v6_0_11.dither_wrap [\dither_wrap(3,4,1,0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(0,1,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(0,1,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(1,1,0,0,0,...]
+Compiling architecture synth of entity dds_compiler_v6_0_11.pipe_add [\pipe_add(16,1,16)\]
+Compiling architecture synth of entity dds_compiler_v6_0_11.accum [\accum("zynq",1,3,"110011001100,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(0,1,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(1,1,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(1,1,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(4,1,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(1,1,0,0,0,...]
+Compiling architecture synth of entity dds_compiler_v6_0_11.sin_cos [\sin_cos("zynq",0,9,1,13,15,13,6...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(0,1,0,0,1,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(0,1,0,0,0,...]
+Compiling architecture synth of entity dds_compiler_v6_0_11.dds_compiler_v6_0_11_core [\dds_compiler_v6_0_11_core("zynq...]
+Compiling architecture synth of entity dds_compiler_v6_0_11.dds_compiler_v6_0_11_viv [\dds_compiler_v6_0_11_viv("zynq"...]
+Compiling architecture xilinx of entity dds_compiler_v6_0_11.dds_compiler_v6_0_11 [\dds_compiler_v6_0_11("zynq",0,9...]
+Compiling architecture dds_compiler_0_arch of entity xil_defaultlib.dds_compiler_0 [dds_compiler_0_default]
+Compiling architecture synth of entity dds_compiler_v6_0_11.accum [\accum("zynq",1,3,"1100001010001...]
+Compiling architecture synth of entity dds_compiler_v6_0_11.dds_compiler_v6_0_11_core [\dds_compiler_v6_0_11_core("zynq...]
+Compiling architecture synth of entity dds_compiler_v6_0_11.dds_compiler_v6_0_11_viv [\dds_compiler_v6_0_11_viv("zynq"...]
+Compiling architecture xilinx of entity dds_compiler_v6_0_11.dds_compiler_v6_0_11 [\dds_compiler_v6_0_11("zynq",0,9...]
+Compiling architecture dds_compiler_1_arch of entity xil_defaultlib.dds_compiler_1 [dds_compiler_1_default]
+Compiling module xil_defaultlib.FSK_mod
+Compiling module xil_defaultlib.simu
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simu_behav
+
+****** Webtalk v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source D:/FPGA/Vivado/FSK/FSK.sim/sim_1/behav/xsim.dir/simu_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu Feb 01 15:01:02 2018...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 1003.641 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/FPGA/Vivado/FSK/FSK.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simu_behav -key {Behavioral:sim_1:Functional:simu} -tclbatch {simu.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.4
+Time resolution is 1 ps
+source simu.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simu_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:17 . Memory (MB): peak = 1003.641 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:D:/FPGA/Vivado/FSK/FSK.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'simu' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'D:/FPGA/Vivado/FSK/FSK.sim/sim_1/behav'
+"xvlog -m64 --relax -prj simu_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/new/FSK_mod.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSK_mod
+INFO: [VRFC 10-2458] undeclared symbol m_axis_data_tvalid, assumed default net type wire [D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/new/FSK_mod.v:42]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivado/FSK/FSK.srcs/sim_1/new/simu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simu
+INFO: [VRFC 10-2458] undeclared symbol dout7dout9_5M, assumed default net type wire [D:/FPGA/Vivado/FSK/FSK.srcs/sim_1/new/simu.v:38]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivado/FSK/FSK.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj simu_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd" into library xbip_utils_v3_0_5
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/axi_utils_v2_0_1/hdl/axi_utils_v2_0_vh_rfs.vhd" into library axi_utils_v2_0_1
+INFO: [VRFC 10-307] analyzing entity glb_srl_fifo
+INFO: [VRFC 10-307] analyzing entity glb_ifx_slave
+INFO: [VRFC 10-307] analyzing entity glb_ifx_master
+INFO: [VRFC 10-307] analyzing entity axi_slave_2to1
+INFO: [VRFC 10-307] analyzing entity axi_slave_3to1
+INFO: [VRFC 10-307] analyzing entity axi_slave_4to1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_pipe_v3_0_1/hdl/xbip_pipe_v3_0_vh_rfs.vhd" into library xbip_pipe_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0_1_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_pipe_v3_0_1/hdl/xbip_pipe_v3_0.vhd" into library xbip_pipe_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0_1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_bram18k_v3_0_1/hdl/xbip_bram18k_v3_0_vh_rfs.vhd" into library xbip_bram18k_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_synth
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_v3_0_1_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_bram18k_v3_0_1/hdl/xbip_bram18k_v3_0.vhd" into library xbip_bram18k_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_v3_0_1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd" into library mult_gen_v12_0_10
+INFO: [VRFC 10-307] analyzing entity op_resize
+INFO: [VRFC 10-307] analyzing entity delay_line
+INFO: [VRFC 10-307] analyzing entity cc_compare
+INFO: [VRFC 10-307] analyzing entity luts
+INFO: [VRFC 10-307] analyzing entity mult18
+INFO: [VRFC 10-307] analyzing entity dsp
+INFO: [VRFC 10-307] analyzing entity hybrid
+INFO: [VRFC 10-307] analyzing entity ccm_dist_mem
+INFO: [VRFC 10-307] analyzing entity ccm_sp_block_mem
+INFO: [VRFC 10-307] analyzing entity ccm_dp_block_mem
+INFO: [VRFC 10-307] analyzing entity ccm_syncmem
+INFO: [VRFC 10-307] analyzing entity ccm_scaled_adder
+INFO: [VRFC 10-307] analyzing entity ccm_operation
+INFO: [VRFC 10-307] analyzing entity ccm
+INFO: [VRFC 10-307] analyzing entity three_input_adder
+INFO: [VRFC 10-307] analyzing entity multmxn_lut6
+INFO: [VRFC 10-307] analyzing entity mult_gen_v12_0_10_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/mult_gen_v12_0_10/hdl/mult_gen_v12_0.vhd" into library mult_gen_v12_0_10
+INFO: [VRFC 10-307] analyzing entity mult_gen_v12_0_10
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_dsp48_wrapper_v3_0_4/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd" into library xbip_dsp48_wrapper_v3_0_4
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e2_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_wrapper_v3_0_4
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_dsp48_addsub_v3_0_1/hdl/xbip_dsp48_addsub_v3_0_vh_rfs.vhd" into library xbip_dsp48_addsub_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_synth
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_v3_0_1_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_dsp48_addsub_v3_0_1/hdl/xbip_dsp48_addsub_v3_0.vhd" into library xbip_dsp48_addsub_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_v3_0_1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_dsp48_multadd_v3_0_1/hdl/xbip_dsp48_multadd_v3_0_vh_rfs.vhd" into library xbip_dsp48_multadd_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_synth
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_v3_0_1_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_dsp48_multadd_v3_0_1/hdl/xbip_dsp48_multadd_v3_0.vhd" into library xbip_dsp48_multadd_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_v3_0_1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/dds_compiler_v6_0_11/hdl/dds_compiler_v6_0_vh_rfs.vhd" into library dds_compiler_v6_0_11
+INFO: [VRFC 10-307] analyzing entity dither_wrap
+INFO: [VRFC 10-307] analyzing entity pipe_add
+INFO: [VRFC 10-307] analyzing entity lut_ram
+INFO: [VRFC 10-307] analyzing entity lut5_ram
+INFO: [VRFC 10-307] analyzing entity sin_cos
+INFO: [VRFC 10-307] analyzing entity sin_cos_quad_rast
+INFO: [VRFC 10-307] analyzing entity dsp48_wrap
+INFO: [VRFC 10-307] analyzing entity accum
+INFO: [VRFC 10-307] analyzing entity raster_accum
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11_eff_lut
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11_eff
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11_rdy
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11_core
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/dds_compiler_v6_0_11/hdl/dds_compiler_v6_0.vhd" into library dds_compiler_v6_0_11
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/ip/dds_compiler_1/sim/dds_compiler_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dds_compiler_1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/ip/dds_compiler_0/sim/dds_compiler_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dds_compiler_0
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1003.641 ; gain = 0.000
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/FPGA/Vivado/FSK/FSK.sim/sim_1/behav'
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: D:/program_file/Xilinx/Vivado/2015.4/bin/unwrapped/win64.o/xelab.exe -wto 3256dda551e44dd6bbd9fced7dfd9f7f --debug typical --relax --mt 2 -L xbip_utils_v3_0_5 -L axi_utils_v2_0_1 -L xbip_pipe_v3_0_1 -L xbip_bram18k_v3_0_1 -L mult_gen_v12_0_10 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_1 -L xbip_dsp48_multadd_v3_0_1 -L dds_compiler_v6_0_11 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simu_behav xil_defaultlib.simu xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 16 for port dout9_5M [D:/FPGA/Vivado/FSK/FSK.srcs/sim_1/new/simu.v:38]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package xbip_utils_v3_0_5.xbip_utils_v3_0_5_pkg
+Compiling package xbip_utils_v3_0_5.xcc_utils_v3_0
+Compiling package dds_compiler_v6_0_11.dds_compiler_v6_0_11_viv_comp
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package dds_compiler_v6_0_11.pkg_dds_compiler_v6_0_11
+Compiling package dds_compiler_v6_0_11.dds_compiler_v6_0_11_hdl_comps
+Compiling package xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv_comp
+Compiling package axi_utils_v2_0_1.axi_utils_v2_0_1_pkg
+Compiling package ieee.math_real
+Compiling package axi_utils_v2_0_1.global_util_pkg
+Compiling package axi_utils_v2_0_1.axi_utils_comps
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_unsigned
+Compiling package dds_compiler_v6_0_11.pkg_betas
+Compiling package dds_compiler_v6_0_11.pkg_alphas
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(9,1,0,0,1,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(1,1,0,0,0,...]
+Compiling architecture synth of entity dds_compiler_v6_0_11.dds_compiler_v6_0_11_rdy [\dds_compiler_v6_0_11_rdy(1,0,1,...]
+Compiling architecture synth of entity dds_compiler_v6_0_11.dither_wrap [\dither_wrap(3,4,1,0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(0,1,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(0,1,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(1,1,0,0,0,...]
+Compiling architecture synth of entity dds_compiler_v6_0_11.pipe_add [\pipe_add(16,1,16)\]
+Compiling architecture synth of entity dds_compiler_v6_0_11.accum [\accum("zynq",1,3,"110011001100,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(0,1,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(1,1,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(1,1,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(4,1,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(1,1,0,0,0,...]
+Compiling architecture synth of entity dds_compiler_v6_0_11.sin_cos [\sin_cos("zynq",0,9,1,13,15,13,6...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(0,1,0,0,1,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(0,1,0,0,0,...]
+Compiling architecture synth of entity dds_compiler_v6_0_11.dds_compiler_v6_0_11_core [\dds_compiler_v6_0_11_core("zynq...]
+Compiling architecture synth of entity dds_compiler_v6_0_11.dds_compiler_v6_0_11_viv [\dds_compiler_v6_0_11_viv("zynq"...]
+Compiling architecture xilinx of entity dds_compiler_v6_0_11.dds_compiler_v6_0_11 [\dds_compiler_v6_0_11("zynq",0,9...]
+Compiling architecture dds_compiler_0_arch of entity xil_defaultlib.dds_compiler_0 [dds_compiler_0_default]
+Compiling architecture synth of entity dds_compiler_v6_0_11.accum [\accum("zynq",1,3,"1100001010001...]
+Compiling architecture synth of entity dds_compiler_v6_0_11.dds_compiler_v6_0_11_core [\dds_compiler_v6_0_11_core("zynq...]
+Compiling architecture synth of entity dds_compiler_v6_0_11.dds_compiler_v6_0_11_viv [\dds_compiler_v6_0_11_viv("zynq"...]
+Compiling architecture xilinx of entity dds_compiler_v6_0_11.dds_compiler_v6_0_11 [\dds_compiler_v6_0_11("zynq",0,9...]
+Compiling architecture dds_compiler_1_arch of entity xil_defaultlib.dds_compiler_1 [dds_compiler_1_default]
+Compiling module xil_defaultlib.FSK_mod
+Compiling module xil_defaultlib.simu
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simu_behav
+
+****** Webtalk v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source D:/FPGA/Vivado/FSK/FSK.sim/sim_1/behav/xsim.dir/simu_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu Feb 01 15:03:38 2018...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1003.641 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/FPGA/Vivado/FSK/FSK.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simu_behav -key {Behavioral:sim_1:Functional:simu} -tclbatch {simu.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.4
+Time resolution is 1 ps
+source simu.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simu_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:17 . Memory (MB): peak = 1003.641 ; gain = 0.000
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run all
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-344] 'run' was cancelled
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:D:/FPGA/Vivado/FSK/FSK.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'simu' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'D:/FPGA/Vivado/FSK/FSK.sim/sim_1/behav'
+"xvlog -m64 --relax -prj simu_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/new/FSK_mod.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSK_mod
+INFO: [VRFC 10-2458] undeclared symbol m_axis_data_tvalid, assumed default net type wire [D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/new/FSK_mod.v:42]
+INFO: [VRFC 10-2458] undeclared symbol nouse, assumed default net type wire [D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/new/FSK_mod.v:47]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivado/FSK/FSK.srcs/sim_1/new/simu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simu
+INFO: [VRFC 10-2458] undeclared symbol dout7dout9_5M, assumed default net type wire [D:/FPGA/Vivado/FSK/FSK.srcs/sim_1/new/simu.v:38]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivado/FSK/FSK.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj simu_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd" into library xbip_utils_v3_0_5
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/axi_utils_v2_0_1/hdl/axi_utils_v2_0_vh_rfs.vhd" into library axi_utils_v2_0_1
+INFO: [VRFC 10-307] analyzing entity glb_srl_fifo
+INFO: [VRFC 10-307] analyzing entity glb_ifx_slave
+INFO: [VRFC 10-307] analyzing entity glb_ifx_master
+INFO: [VRFC 10-307] analyzing entity axi_slave_2to1
+INFO: [VRFC 10-307] analyzing entity axi_slave_3to1
+INFO: [VRFC 10-307] analyzing entity axi_slave_4to1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_pipe_v3_0_1/hdl/xbip_pipe_v3_0_vh_rfs.vhd" into library xbip_pipe_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0_1_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_pipe_v3_0_1/hdl/xbip_pipe_v3_0.vhd" into library xbip_pipe_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0_1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_bram18k_v3_0_1/hdl/xbip_bram18k_v3_0_vh_rfs.vhd" into library xbip_bram18k_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_synth
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_v3_0_1_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_bram18k_v3_0_1/hdl/xbip_bram18k_v3_0.vhd" into library xbip_bram18k_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_v3_0_1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd" into library mult_gen_v12_0_10
+INFO: [VRFC 10-307] analyzing entity op_resize
+INFO: [VRFC 10-307] analyzing entity delay_line
+INFO: [VRFC 10-307] analyzing entity cc_compare
+INFO: [VRFC 10-307] analyzing entity luts
+INFO: [VRFC 10-307] analyzing entity mult18
+INFO: [VRFC 10-307] analyzing entity dsp
+INFO: [VRFC 10-307] analyzing entity hybrid
+INFO: [VRFC 10-307] analyzing entity ccm_dist_mem
+INFO: [VRFC 10-307] analyzing entity ccm_sp_block_mem
+INFO: [VRFC 10-307] analyzing entity ccm_dp_block_mem
+INFO: [VRFC 10-307] analyzing entity ccm_syncmem
+INFO: [VRFC 10-307] analyzing entity ccm_scaled_adder
+INFO: [VRFC 10-307] analyzing entity ccm_operation
+INFO: [VRFC 10-307] analyzing entity ccm
+INFO: [VRFC 10-307] analyzing entity three_input_adder
+INFO: [VRFC 10-307] analyzing entity multmxn_lut6
+INFO: [VRFC 10-307] analyzing entity mult_gen_v12_0_10_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/mult_gen_v12_0_10/hdl/mult_gen_v12_0.vhd" into library mult_gen_v12_0_10
+INFO: [VRFC 10-307] analyzing entity mult_gen_v12_0_10
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_dsp48_wrapper_v3_0_4/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd" into library xbip_dsp48_wrapper_v3_0_4
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e2_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_wrapper_v3_0_4
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_dsp48_addsub_v3_0_1/hdl/xbip_dsp48_addsub_v3_0_vh_rfs.vhd" into library xbip_dsp48_addsub_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_synth
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_v3_0_1_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_dsp48_addsub_v3_0_1/hdl/xbip_dsp48_addsub_v3_0.vhd" into library xbip_dsp48_addsub_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_v3_0_1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_dsp48_multadd_v3_0_1/hdl/xbip_dsp48_multadd_v3_0_vh_rfs.vhd" into library xbip_dsp48_multadd_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_synth
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_v3_0_1_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_dsp48_multadd_v3_0_1/hdl/xbip_dsp48_multadd_v3_0.vhd" into library xbip_dsp48_multadd_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_v3_0_1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/dds_compiler_v6_0_11/hdl/dds_compiler_v6_0_vh_rfs.vhd" into library dds_compiler_v6_0_11
+INFO: [VRFC 10-307] analyzing entity dither_wrap
+INFO: [VRFC 10-307] analyzing entity pipe_add
+INFO: [VRFC 10-307] analyzing entity lut_ram
+INFO: [VRFC 10-307] analyzing entity lut5_ram
+INFO: [VRFC 10-307] analyzing entity sin_cos
+INFO: [VRFC 10-307] analyzing entity sin_cos_quad_rast
+INFO: [VRFC 10-307] analyzing entity dsp48_wrap
+INFO: [VRFC 10-307] analyzing entity accum
+INFO: [VRFC 10-307] analyzing entity raster_accum
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11_eff_lut
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11_eff
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11_rdy
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11_core
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/dds_compiler_v6_0_11/hdl/dds_compiler_v6_0.vhd" into library dds_compiler_v6_0_11
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/ip/dds_compiler_1/sim/dds_compiler_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dds_compiler_1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/ip/dds_compiler_0/sim/dds_compiler_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dds_compiler_0
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1007.020 ; gain = 0.000
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/FPGA/Vivado/FSK/FSK.sim/sim_1/behav'
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: D:/program_file/Xilinx/Vivado/2015.4/bin/unwrapped/win64.o/xelab.exe -wto 3256dda551e44dd6bbd9fced7dfd9f7f --debug typical --relax --mt 2 -L xbip_utils_v3_0_5 -L axi_utils_v2_0_1 -L xbip_pipe_v3_0_1 -L xbip_bram18k_v3_0_1 -L mult_gen_v12_0_10 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_1 -L xbip_dsp48_multadd_v3_0_1 -L dds_compiler_v6_0_11 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simu_behav xil_defaultlib.simu xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 16 for port dout9_5M [D:/FPGA/Vivado/FSK/FSK.srcs/sim_1/new/simu.v:38]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package xbip_utils_v3_0_5.xbip_utils_v3_0_5_pkg
+Compiling package xbip_utils_v3_0_5.xcc_utils_v3_0
+Compiling package dds_compiler_v6_0_11.dds_compiler_v6_0_11_viv_comp
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package dds_compiler_v6_0_11.pkg_dds_compiler_v6_0_11
+Compiling package dds_compiler_v6_0_11.dds_compiler_v6_0_11_hdl_comps
+Compiling package xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv_comp
+Compiling package axi_utils_v2_0_1.axi_utils_v2_0_1_pkg
+Compiling package ieee.math_real
+Compiling package axi_utils_v2_0_1.global_util_pkg
+Compiling package axi_utils_v2_0_1.axi_utils_comps
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_unsigned
+Compiling package dds_compiler_v6_0_11.pkg_betas
+Compiling package dds_compiler_v6_0_11.pkg_alphas
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(9,1,0,0,1,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(1,1,0,0,0,...]
+Compiling architecture synth of entity dds_compiler_v6_0_11.dds_compiler_v6_0_11_rdy [\dds_compiler_v6_0_11_rdy(1,0,1,...]
+Compiling architecture synth of entity dds_compiler_v6_0_11.dither_wrap [\dither_wrap(3,4,1,0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(0,1,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(0,1,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(1,1,0,0,0,...]
+Compiling architecture synth of entity dds_compiler_v6_0_11.pipe_add [\pipe_add(16,1,16)\]
+Compiling architecture synth of entity dds_compiler_v6_0_11.accum [\accum("zynq",1,3,"110011001100,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(0,1,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(1,1,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(1,1,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(4,1,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(1,1,0,0,0,...]
+Compiling architecture synth of entity dds_compiler_v6_0_11.sin_cos [\sin_cos("zynq",0,9,1,13,15,13,6...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(0,1,0,0,1,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(0,1,0,0,0,...]
+Compiling architecture synth of entity dds_compiler_v6_0_11.dds_compiler_v6_0_11_core [\dds_compiler_v6_0_11_core("zynq...]
+Compiling architecture synth of entity dds_compiler_v6_0_11.dds_compiler_v6_0_11_viv [\dds_compiler_v6_0_11_viv("zynq"...]
+Compiling architecture xilinx of entity dds_compiler_v6_0_11.dds_compiler_v6_0_11 [\dds_compiler_v6_0_11("zynq",0,9...]
+Compiling architecture dds_compiler_0_arch of entity xil_defaultlib.dds_compiler_0 [dds_compiler_0_default]
+Compiling architecture synth of entity dds_compiler_v6_0_11.accum [\accum("zynq",1,3,"1100001010001...]
+Compiling architecture synth of entity dds_compiler_v6_0_11.dds_compiler_v6_0_11_core [\dds_compiler_v6_0_11_core("zynq...]
+Compiling architecture synth of entity dds_compiler_v6_0_11.dds_compiler_v6_0_11_viv [\dds_compiler_v6_0_11_viv("zynq"...]
+Compiling architecture xilinx of entity dds_compiler_v6_0_11.dds_compiler_v6_0_11 [\dds_compiler_v6_0_11("zynq",0,9...]
+Compiling architecture dds_compiler_1_arch of entity xil_defaultlib.dds_compiler_1 [dds_compiler_1_default]
+Compiling module xil_defaultlib.FSK_mod
+Compiling module xil_defaultlib.simu
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simu_behav
+
+****** Webtalk v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source D:/FPGA/Vivado/FSK/FSK.sim/sim_1/behav/xsim.dir/simu_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu Feb 01 15:07:20 2018...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1007.020 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/FPGA/Vivado/FSK/FSK.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simu_behav -key {Behavioral:sim_1:Functional:simu} -tclbatch {simu.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.4
+Time resolution is 1 ps
+source simu.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simu_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:16 . Memory (MB): peak = 1007.020 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:D:/FPGA/Vivado/FSK/FSK.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'simu' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'D:/FPGA/Vivado/FSK/FSK.sim/sim_1/behav'
+"xvlog -m64 --relax -prj simu_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/new/FSK_mod.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSK_mod
+INFO: [VRFC 10-2458] undeclared symbol m_axis_data_tvalid, assumed default net type wire [D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/new/FSK_mod.v:42]
+INFO: [VRFC 10-2458] undeclared symbol nouse, assumed default net type wire [D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/new/FSK_mod.v:47]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivado/FSK/FSK.srcs/sim_1/new/simu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivado/FSK/FSK.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj simu_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd" into library xbip_utils_v3_0_5
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/axi_utils_v2_0_1/hdl/axi_utils_v2_0_vh_rfs.vhd" into library axi_utils_v2_0_1
+INFO: [VRFC 10-307] analyzing entity glb_srl_fifo
+INFO: [VRFC 10-307] analyzing entity glb_ifx_slave
+INFO: [VRFC 10-307] analyzing entity glb_ifx_master
+INFO: [VRFC 10-307] analyzing entity axi_slave_2to1
+INFO: [VRFC 10-307] analyzing entity axi_slave_3to1
+INFO: [VRFC 10-307] analyzing entity axi_slave_4to1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_pipe_v3_0_1/hdl/xbip_pipe_v3_0_vh_rfs.vhd" into library xbip_pipe_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0_1_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_pipe_v3_0_1/hdl/xbip_pipe_v3_0.vhd" into library xbip_pipe_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0_1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_bram18k_v3_0_1/hdl/xbip_bram18k_v3_0_vh_rfs.vhd" into library xbip_bram18k_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_synth
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_v3_0_1_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_bram18k_v3_0_1/hdl/xbip_bram18k_v3_0.vhd" into library xbip_bram18k_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_v3_0_1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd" into library mult_gen_v12_0_10
+INFO: [VRFC 10-307] analyzing entity op_resize
+INFO: [VRFC 10-307] analyzing entity delay_line
+INFO: [VRFC 10-307] analyzing entity cc_compare
+INFO: [VRFC 10-307] analyzing entity luts
+INFO: [VRFC 10-307] analyzing entity mult18
+INFO: [VRFC 10-307] analyzing entity dsp
+INFO: [VRFC 10-307] analyzing entity hybrid
+INFO: [VRFC 10-307] analyzing entity ccm_dist_mem
+INFO: [VRFC 10-307] analyzing entity ccm_sp_block_mem
+INFO: [VRFC 10-307] analyzing entity ccm_dp_block_mem
+INFO: [VRFC 10-307] analyzing entity ccm_syncmem
+INFO: [VRFC 10-307] analyzing entity ccm_scaled_adder
+INFO: [VRFC 10-307] analyzing entity ccm_operation
+INFO: [VRFC 10-307] analyzing entity ccm
+INFO: [VRFC 10-307] analyzing entity three_input_adder
+INFO: [VRFC 10-307] analyzing entity multmxn_lut6
+INFO: [VRFC 10-307] analyzing entity mult_gen_v12_0_10_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/mult_gen_v12_0_10/hdl/mult_gen_v12_0.vhd" into library mult_gen_v12_0_10
+INFO: [VRFC 10-307] analyzing entity mult_gen_v12_0_10
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_dsp48_wrapper_v3_0_4/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd" into library xbip_dsp48_wrapper_v3_0_4
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e2_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_wrapper_v3_0_4
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_dsp48_addsub_v3_0_1/hdl/xbip_dsp48_addsub_v3_0_vh_rfs.vhd" into library xbip_dsp48_addsub_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_synth
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_v3_0_1_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_dsp48_addsub_v3_0_1/hdl/xbip_dsp48_addsub_v3_0.vhd" into library xbip_dsp48_addsub_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_v3_0_1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_dsp48_multadd_v3_0_1/hdl/xbip_dsp48_multadd_v3_0_vh_rfs.vhd" into library xbip_dsp48_multadd_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_synth
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_v3_0_1_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_dsp48_multadd_v3_0_1/hdl/xbip_dsp48_multadd_v3_0.vhd" into library xbip_dsp48_multadd_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_v3_0_1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/dds_compiler_v6_0_11/hdl/dds_compiler_v6_0_vh_rfs.vhd" into library dds_compiler_v6_0_11
+INFO: [VRFC 10-307] analyzing entity dither_wrap
+INFO: [VRFC 10-307] analyzing entity pipe_add
+INFO: [VRFC 10-307] analyzing entity lut_ram
+INFO: [VRFC 10-307] analyzing entity lut5_ram
+INFO: [VRFC 10-307] analyzing entity sin_cos
+INFO: [VRFC 10-307] analyzing entity sin_cos_quad_rast
+INFO: [VRFC 10-307] analyzing entity dsp48_wrap
+INFO: [VRFC 10-307] analyzing entity accum
+INFO: [VRFC 10-307] analyzing entity raster_accum
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11_eff_lut
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11_eff
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11_rdy
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11_core
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/dds_compiler_v6_0_11/hdl/dds_compiler_v6_0.vhd" into library dds_compiler_v6_0_11
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/ip/dds_compiler_1/sim/dds_compiler_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dds_compiler_1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/ip/dds_compiler_0/sim/dds_compiler_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dds_compiler_0
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1007.020 ; gain = 0.000
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/FPGA/Vivado/FSK/FSK.sim/sim_1/behav'
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: D:/program_file/Xilinx/Vivado/2015.4/bin/unwrapped/win64.o/xelab.exe -wto 3256dda551e44dd6bbd9fced7dfd9f7f --debug typical --relax --mt 2 -L xbip_utils_v3_0_5 -L axi_utils_v2_0_1 -L xbip_pipe_v3_0_1 -L xbip_bram18k_v3_0_1 -L mult_gen_v12_0_10 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_1 -L xbip_dsp48_multadd_v3_0_1 -L dds_compiler_v6_0_11 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simu_behav xil_defaultlib.simu xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package xbip_utils_v3_0_5.xbip_utils_v3_0_5_pkg
+Compiling package xbip_utils_v3_0_5.xcc_utils_v3_0
+Compiling package dds_compiler_v6_0_11.dds_compiler_v6_0_11_viv_comp
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package dds_compiler_v6_0_11.pkg_dds_compiler_v6_0_11
+Compiling package dds_compiler_v6_0_11.dds_compiler_v6_0_11_hdl_comps
+Compiling package xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv_comp
+Compiling package axi_utils_v2_0_1.axi_utils_v2_0_1_pkg
+Compiling package ieee.math_real
+Compiling package axi_utils_v2_0_1.global_util_pkg
+Compiling package axi_utils_v2_0_1.axi_utils_comps
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_unsigned
+Compiling package dds_compiler_v6_0_11.pkg_betas
+Compiling package dds_compiler_v6_0_11.pkg_alphas
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(9,1,0,0,1,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(1,1,0,0,0,...]
+Compiling architecture synth of entity dds_compiler_v6_0_11.dds_compiler_v6_0_11_rdy [\dds_compiler_v6_0_11_rdy(1,0,1,...]
+Compiling architecture synth of entity dds_compiler_v6_0_11.dither_wrap [\dither_wrap(3,4,1,0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(0,1,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(0,1,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(1,1,0,0,0,...]
+Compiling architecture synth of entity dds_compiler_v6_0_11.pipe_add [\pipe_add(16,1,16)\]
+Compiling architecture synth of entity dds_compiler_v6_0_11.accum [\accum("zynq",1,3,"110011001100,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(0,1,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(1,1,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(1,1,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(4,1,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(1,1,0,0,0,...]
+Compiling architecture synth of entity dds_compiler_v6_0_11.sin_cos [\sin_cos("zynq",0,9,1,13,15,13,6...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(0,1,0,0,1,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(0,1,0,0,0,...]
+Compiling architecture synth of entity dds_compiler_v6_0_11.dds_compiler_v6_0_11_core [\dds_compiler_v6_0_11_core("zynq...]
+Compiling architecture synth of entity dds_compiler_v6_0_11.dds_compiler_v6_0_11_viv [\dds_compiler_v6_0_11_viv("zynq"...]
+Compiling architecture xilinx of entity dds_compiler_v6_0_11.dds_compiler_v6_0_11 [\dds_compiler_v6_0_11("zynq",0,9...]
+Compiling architecture dds_compiler_0_arch of entity xil_defaultlib.dds_compiler_0 [dds_compiler_0_default]
+Compiling architecture synth of entity dds_compiler_v6_0_11.accum [\accum("zynq",1,3,"1100001010001...]
+Compiling architecture synth of entity dds_compiler_v6_0_11.dds_compiler_v6_0_11_core [\dds_compiler_v6_0_11_core("zynq...]
+Compiling architecture synth of entity dds_compiler_v6_0_11.dds_compiler_v6_0_11_viv [\dds_compiler_v6_0_11_viv("zynq"...]
+Compiling architecture xilinx of entity dds_compiler_v6_0_11.dds_compiler_v6_0_11 [\dds_compiler_v6_0_11("zynq",0,9...]
+Compiling architecture dds_compiler_1_arch of entity xil_defaultlib.dds_compiler_1 [dds_compiler_1_default]
+Compiling module xil_defaultlib.FSK_mod
+Compiling module xil_defaultlib.simu
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simu_behav
+
+****** Webtalk v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source D:/FPGA/Vivado/FSK/FSK.sim/sim_1/behav/xsim.dir/simu_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu Feb 01 15:08:16 2018...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1007.020 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/FPGA/Vivado/FSK/FSK.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simu_behav -key {Behavioral:sim_1:Functional:simu} -tclbatch {simu.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.4
+Time resolution is 1 ps
+source simu.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simu_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:17 . Memory (MB): peak = 1007.020 ; gain = 0.000
+run all
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-344] 'run' was cancelled
+launch_runs synth_1 -jobs 4
+INFO: [HDL 9-2216] Analyzing Verilog file "D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/new/FSK_mod.v" into library work [D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/new/FSK_mod.v:1]
+[Thu Feb 01 15:21:49 2018] Launched synth_1...
+Run output will be captured here: D:/FPGA/Vivado/FSK/FSK.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:D:/FPGA/Vivado/FSK/FSK.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'simu' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'D:/FPGA/Vivado/FSK/FSK.sim/sim_1/behav'
+"xvlog -m64 --relax -prj simu_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/new/FSK_mod.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSK_mod
+INFO: [VRFC 10-2458] undeclared symbol m_axis_data_tvalid, assumed default net type wire [D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/new/FSK_mod.v:42]
+INFO: [VRFC 10-2458] undeclared symbol nouse, assumed default net type wire [D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/new/FSK_mod.v:47]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivado/FSK/FSK.srcs/sim_1/new/simu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivado/FSK/FSK.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj simu_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd" into library xbip_utils_v3_0_5
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/axi_utils_v2_0_1/hdl/axi_utils_v2_0_vh_rfs.vhd" into library axi_utils_v2_0_1
+INFO: [VRFC 10-307] analyzing entity glb_srl_fifo
+INFO: [VRFC 10-307] analyzing entity glb_ifx_slave
+INFO: [VRFC 10-307] analyzing entity glb_ifx_master
+INFO: [VRFC 10-307] analyzing entity axi_slave_2to1
+INFO: [VRFC 10-307] analyzing entity axi_slave_3to1
+INFO: [VRFC 10-307] analyzing entity axi_slave_4to1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_pipe_v3_0_1/hdl/xbip_pipe_v3_0_vh_rfs.vhd" into library xbip_pipe_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0_1_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_pipe_v3_0_1/hdl/xbip_pipe_v3_0.vhd" into library xbip_pipe_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0_1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_bram18k_v3_0_1/hdl/xbip_bram18k_v3_0_vh_rfs.vhd" into library xbip_bram18k_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_synth
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_v3_0_1_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_bram18k_v3_0_1/hdl/xbip_bram18k_v3_0.vhd" into library xbip_bram18k_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_v3_0_1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd" into library mult_gen_v12_0_10
+INFO: [VRFC 10-307] analyzing entity op_resize
+INFO: [VRFC 10-307] analyzing entity delay_line
+INFO: [VRFC 10-307] analyzing entity cc_compare
+INFO: [VRFC 10-307] analyzing entity luts
+INFO: [VRFC 10-307] analyzing entity mult18
+INFO: [VRFC 10-307] analyzing entity dsp
+INFO: [VRFC 10-307] analyzing entity hybrid
+INFO: [VRFC 10-307] analyzing entity ccm_dist_mem
+INFO: [VRFC 10-307] analyzing entity ccm_sp_block_mem
+INFO: [VRFC 10-307] analyzing entity ccm_dp_block_mem
+INFO: [VRFC 10-307] analyzing entity ccm_syncmem
+INFO: [VRFC 10-307] analyzing entity ccm_scaled_adder
+INFO: [VRFC 10-307] analyzing entity ccm_operation
+INFO: [VRFC 10-307] analyzing entity ccm
+INFO: [VRFC 10-307] analyzing entity three_input_adder
+INFO: [VRFC 10-307] analyzing entity multmxn_lut6
+INFO: [VRFC 10-307] analyzing entity mult_gen_v12_0_10_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/mult_gen_v12_0_10/hdl/mult_gen_v12_0.vhd" into library mult_gen_v12_0_10
+INFO: [VRFC 10-307] analyzing entity mult_gen_v12_0_10
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_dsp48_wrapper_v3_0_4/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd" into library xbip_dsp48_wrapper_v3_0_4
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e2_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_wrapper_v3_0_4
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_dsp48_addsub_v3_0_1/hdl/xbip_dsp48_addsub_v3_0_vh_rfs.vhd" into library xbip_dsp48_addsub_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_synth
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_v3_0_1_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_dsp48_addsub_v3_0_1/hdl/xbip_dsp48_addsub_v3_0.vhd" into library xbip_dsp48_addsub_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_v3_0_1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_dsp48_multadd_v3_0_1/hdl/xbip_dsp48_multadd_v3_0_vh_rfs.vhd" into library xbip_dsp48_multadd_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_synth
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_v3_0_1_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/xbip_dsp48_multadd_v3_0_1/hdl/xbip_dsp48_multadd_v3_0.vhd" into library xbip_dsp48_multadd_v3_0_1
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_v3_0_1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/dds_compiler_v6_0_11/hdl/dds_compiler_v6_0_vh_rfs.vhd" into library dds_compiler_v6_0_11
+INFO: [VRFC 10-307] analyzing entity dither_wrap
+INFO: [VRFC 10-307] analyzing entity pipe_add
+INFO: [VRFC 10-307] analyzing entity lut_ram
+INFO: [VRFC 10-307] analyzing entity lut5_ram
+INFO: [VRFC 10-307] analyzing entity sin_cos
+INFO: [VRFC 10-307] analyzing entity sin_cos_quad_rast
+INFO: [VRFC 10-307] analyzing entity dsp48_wrap
+INFO: [VRFC 10-307] analyzing entity accum
+INFO: [VRFC 10-307] analyzing entity raster_accum
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11_eff_lut
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11_eff
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11_rdy
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11_core
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.ip_user_files/ipstatic/dds_compiler_v6_0_11/hdl/dds_compiler_v6_0.vhd" into library dds_compiler_v6_0_11
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_11
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/ip/dds_compiler_1/sim/dds_compiler_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dds_compiler_1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/ip/dds_compiler_0/sim/dds_compiler_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dds_compiler_0
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1008.168 ; gain = 0.000
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/FPGA/Vivado/FSK/FSK.sim/sim_1/behav'
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: D:/program_file/Xilinx/Vivado/2015.4/bin/unwrapped/win64.o/xelab.exe -wto 3256dda551e44dd6bbd9fced7dfd9f7f --debug typical --relax --mt 2 -L xbip_utils_v3_0_5 -L axi_utils_v2_0_1 -L xbip_pipe_v3_0_1 -L xbip_bram18k_v3_0_1 -L mult_gen_v12_0_10 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_1 -L xbip_dsp48_multadd_v3_0_1 -L dds_compiler_v6_0_11 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simu_behav xil_defaultlib.simu xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package xbip_utils_v3_0_5.xbip_utils_v3_0_5_pkg
+Compiling package xbip_utils_v3_0_5.xcc_utils_v3_0
+Compiling package dds_compiler_v6_0_11.dds_compiler_v6_0_11_viv_comp
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package dds_compiler_v6_0_11.pkg_dds_compiler_v6_0_11
+Compiling package dds_compiler_v6_0_11.dds_compiler_v6_0_11_hdl_comps
+Compiling package xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv_comp
+Compiling package axi_utils_v2_0_1.axi_utils_v2_0_1_pkg
+Compiling package ieee.math_real
+Compiling package axi_utils_v2_0_1.global_util_pkg
+Compiling package axi_utils_v2_0_1.axi_utils_comps
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_unsigned
+Compiling package dds_compiler_v6_0_11.pkg_betas
+Compiling package dds_compiler_v6_0_11.pkg_alphas
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(9,1,0,0,1,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(1,1,0,0,0,...]
+Compiling architecture synth of entity dds_compiler_v6_0_11.dds_compiler_v6_0_11_rdy [\dds_compiler_v6_0_11_rdy(1,0,1,...]
+Compiling architecture synth of entity dds_compiler_v6_0_11.dither_wrap [\dither_wrap(3,4,1,0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(0,1,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(0,1,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(1,1,0,0,0,...]
+Compiling architecture synth of entity dds_compiler_v6_0_11.pipe_add [\pipe_add(16,1,16)\]
+Compiling architecture synth of entity dds_compiler_v6_0_11.accum [\accum("zynq",1,3,"110011001100,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(0,1,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(1,1,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(1,1,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(4,1,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(1,1,0,0,0,...]
+Compiling architecture synth of entity dds_compiler_v6_0_11.sin_cos [\sin_cos("zynq",0,9,1,13,15,13,6...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(0,1,0,0,1,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(0,1,0,0,0,...]
+Compiling architecture synth of entity dds_compiler_v6_0_11.dds_compiler_v6_0_11_core [\dds_compiler_v6_0_11_core("zynq...]
+Compiling architecture synth of entity dds_compiler_v6_0_11.dds_compiler_v6_0_11_viv [\dds_compiler_v6_0_11_viv("zynq"...]
+Compiling architecture xilinx of entity dds_compiler_v6_0_11.dds_compiler_v6_0_11 [\dds_compiler_v6_0_11("zynq",0,9...]
+Compiling architecture dds_compiler_0_arch of entity xil_defaultlib.dds_compiler_0 [dds_compiler_0_default]
+Compiling architecture synth of entity dds_compiler_v6_0_11.accum [\accum("zynq",1,3,"1100001010001...]
+Compiling architecture synth of entity dds_compiler_v6_0_11.dds_compiler_v6_0_11_core [\dds_compiler_v6_0_11_core("zynq...]
+Compiling architecture synth of entity dds_compiler_v6_0_11.dds_compiler_v6_0_11_viv [\dds_compiler_v6_0_11_viv("zynq"...]
+Compiling architecture xilinx of entity dds_compiler_v6_0_11.dds_compiler_v6_0_11 [\dds_compiler_v6_0_11("zynq",0,9...]
+Compiling architecture dds_compiler_1_arch of entity xil_defaultlib.dds_compiler_1 [dds_compiler_1_default]
+Compiling module xil_defaultlib.FSK_mod
+Compiling module xil_defaultlib.simu
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simu_behav
+
+****** Webtalk v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source D:/FPGA/Vivado/FSK/FSK.sim/sim_1/behav/xsim.dir/simu_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu Feb 01 15:23:55 2018...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1033.031 ; gain = 24.863
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/FPGA/Vivado/FSK/FSK.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simu_behav -key {Behavioral:sim_1:Functional:simu} -tclbatch {simu.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.4
+Time resolution is 1 ps
+source simu.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simu_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:17 . Memory (MB): peak = 1041.172 ; gain = 33.004
+run 20 ns
+run 20 ns
+run 20 ns
+run 200 ns
+run 200 ns
+run 200 ns
+run 200 ns
+run 200 ns
+run 200 ns
+run 200 ns
+run 200 ns
+run 200 ns
+run 200 ns
+run 200 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close [ open D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/new/FSK_demod.v w ]
+add_files D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/new/FSK_demod.v
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Feb 01 17:34:39 2018...

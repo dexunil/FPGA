@@ -1,0 +1,12 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/new/FSK_demod.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSK_demod
+INFO: [VRFC 10-2458] undeclared symbol s_axis_data_tready, assumed default net type wire [D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/new/FSK_demod.v:45]
+INFO: [VRFC 10-2458] undeclared symbol m_axis_data_tvalid, assumed default net type wire [D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/new/FSK_demod.v:55]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/new/FSK_mod.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSK_mod
+INFO: [VRFC 10-2458] undeclared symbol m_axis_data_tvalid, assumed default net type wire [D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/new/FSK_mod.v:42]
+INFO: [VRFC 10-2458] undeclared symbol nouse, assumed default net type wire [D:/FPGA/Vivado/FSK/FSK.srcs/sources_1/new/FSK_mod.v:47]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivado/FSK/FSK.srcs/sim_1/new/simu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivado/FSK/FSK.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
